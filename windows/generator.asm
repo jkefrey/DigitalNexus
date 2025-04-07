@@ -1,0 +1,79 @@
+mov [rdx],rcx
+sar rdi,4
+inc ch
+jmp [edx]
+sal edx,4
+cli
+lodsb
+stc
+or ax,57
+cmpsw
+mul cl
+syscall
+clc
+ret
+cwd
+dec rdi
+nop
+div edx
+rol rbx,2
+and bl,bl
+cli
+hlt
+sbb esi,ebp
+sbb rbp,96
+adc dh,dh
+nop
+std
+cli
+jmp [eax]
+syscall
+sal esi,2
+test [ebx],eax
+imul cl
+or cx,81
+lodsw
+rdtsc
+sbb dx,dx
+wait
+lodsw
+cmp rbx,rbx
+jmp [edx]
+hlt
+cld
+sal rax,2
+clc
+inc ebp
+and ax,48
+rol dx,1
+call [esi]
+add [ecx],ebx
+call [esi]
+rcl rcx,7
+inc dx
+call [eax]
+call [ebx]
+sbb rbx,rdi
+wait
+add ch,5
+sub bh,bh
+jmp [eax]
+and dl,15
+call [eax]
+inc dh
+lock
+shl esi,3
+and rbp,rbx
+imul ax
+cmpsw
+or [ebp],edx
+sub bh,67
+test dh,dh
+sbb dx,26
+shr ah,7
+idiv ch
+xor rbp,rax
+mul ecx
+call [edx]
+rcl bl,2
+call [ecx]
