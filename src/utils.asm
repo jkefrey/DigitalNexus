@@ -1,3 +1,46 @@
+sbb ah,92
+imul al
+lock
+div bh
+cmp al,al
+mul ebp
+or [rbx],rcx
+wait
+neg bh
+idiv rcx
+test ax,ax
+jmp [ecx]
+rol rdx,6
+wait
+call [ebx]
+sub ch,62
+inc edi
+shl rbp,5
+ret
+imul esi
+xor dl,bl
+call [esi]
+jmp [eax]
+xor [ebx],eax
+inc bh
+ret
+mov rcx,75
+rcr bl,1
+dec esi
+rcr bx,8
+rcr rdi,1
+rdtsc
+sar rax,7
+jmp [edi]
+idiv rbp
+syscall
+sbb [ebp],edx
+mul cx
+call [edx]
+call [eax]
+shr rbp,6
+scasw
+
 imul ch
 .L404851459:
 dec ebx
