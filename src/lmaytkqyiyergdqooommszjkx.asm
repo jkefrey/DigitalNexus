@@ -1,3 +1,40 @@
+clc
+nop
+imul esi
+stc
+nop
+or dh,86
+call [ebx]
+cli
+jmp [edi]
+sal dx,2
+pause
+wait
+sti
+lock
+std
+scasb
+adc al,al
+idiv eax
+imul cx
+scasb
+sbb ax,17
+scasb
+mov [rbx],rbp
+imul dh
+ror eax,5
+call [ebx]
+lock
+rdtsc
+rcr dh,8
+sub eax,ebp
+add cx,52
+sub eax,esi
+call [edi]
+call [ebp]
+rcl ah,3
+stc
+
 rcr ebx,3
 clc
 inc cx
