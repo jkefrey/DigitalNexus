@@ -1,3 +1,31 @@
+cmp [rdi],rcx
+jmp [ecx]
+rdtsc
+jmp [eax]
+inc edx
+xor cx,73
+and ah,74
+rcr al,2
+rcr eax,3
+rol rsi,4
+std
+lock
+scasb
+ret
+shr rdi,1
+rcl rbx,5
+sbb ch,73
+shl bl,6
+sal cl,6
+call [ebp]
+or bx,8
+mov [rsi],rdi
+pause
+neg rax
+add eax,31
+pause
+neg ax
+
 shr al,8
 add rcx,72
 rcr esi,2
