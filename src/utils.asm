@@ -1,3 +1,42 @@
+div rax
+pause
+shr esi,2
+or cx,78
+syscall
+jmp [eax]
+sar ebx,8
+clc
+jmp [edi]
+call [esi]
+rol ax,4
+std
+ret
+or cl,cl
+mul edi
+mov ah,ah
+imul dx
+stc
+call [edx]
+inc dx
+rcr ebp,5
+inc bh
+add [ecx],edi
+rcl dl,6
+sti
+call [edx]
+cmp bx,bx
+sar cx,2
+clc
+ret
+sbb ax,84
+lahf
+ret
+call [edx]
+ret
+xor rbp,37
+cwd
+rcl ecx,5
+
 sbb ah,92
 imul al
 lock
