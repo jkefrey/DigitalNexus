@@ -1,3 +1,35 @@
+sbb rdi,rdx
+shl bl,7
+sar bh,6
+idiv ch
+add edi,57
+pause
+xor ax,80
+ret
+lock
+test bl,1
+sti
+scasb
+and [rdi],rbx
+dec ebx
+cmpsw
+cld
+rcr al,1
+div ebx
+idiv bl
+sal ebx,8
+std
+cld
+or bx,ax
+cmp [rdx],rsi
+sub cx,cx
+div ax
+and rbp,rcx
+call [eax]
+add cx,cx
+idiv edx
+add dh,92
+
 mov [rdx],rcx
 sar rdi,4
 inc ch
