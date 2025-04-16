@@ -1,3 +1,39 @@
+idiv ax
+idiv bx
+dec esi
+neg ax
+shl ax,4
+sub ah,ah
+adc eax,74
+stc
+lodsw
+idiv bh
+dec edi
+rcl cl,3
+clc
+cmpsw
+idiv ecx
+test ax,55
+lodsb
+ret
+sbb rbx,rcx
+shl rbx,7
+lahf
+adc ecx,edi
+idiv dx
+inc bh
+add cl,24
+call [eax]
+div bh
+or dl,36
+rcr rdx,7
+pause
+shl ah,2
+neg bh
+ret
+mul ah
+ror cl,6
+
 pause
 shr bx,3
 sal ebx,4
