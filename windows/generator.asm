@@ -1,3 +1,32 @@
+stc
+dec ebp
+adc [ebx],eax
+sbb [rdx],rdi
+ret
+dec ch
+or bl,2
+sal ax,3
+neg rbp
+ret
+cmp [esi],edx
+sar rbx,5
+jmp [eax]
+and [rcx],rsi
+call [edi]
+nop
+jmp [ecx]
+cli
+lahf
+mul rsi
+std
+add [rdi],rdx
+shl rdi,1
+jmp [edi]
+sar dx,1
+nop
+sar rdx,4
+call [edi]
+
 sbb rdi,rdx
 shl bl,7
 sar bh,6
