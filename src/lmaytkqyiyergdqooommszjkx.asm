@@ -1,3 +1,48 @@
+or [rdx],rdi
+rcl dx,5
+mul ax
+adc bh,25
+cwd
+rcl al,7
+cwd
+scasw
+neg al
+jmp [ebx]
+cld
+jmp [esi]
+sal bl,8
+mul dx
+cli
+cli
+cli
+ret
+mov ax,dx
+call [ecx]
+xor ah,80
+mov dl,97
+and cx,3
+jmp [ebp]
+jmp [edx]
+jmp [ebx]
+scasw
+call [esi]
+sar rax,1
+shl bx,8
+sal bx,6
+ret
+idiv esi
+inc eax
+rol bh,4
+call [ebp]
+or rsi,rcx
+cmpsw
+sar edi,3
+nop
+mov [rsi],rbx
+or ax,ax
+rcr bl,6
+neg cl
+
 clc
 nop
 imul esi
