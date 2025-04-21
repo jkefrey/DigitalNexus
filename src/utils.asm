@@ -1,3 +1,52 @@
+scasb
+nop
+shr dx,6
+shl bx,1
+dec ecx
+imul rbp
+cmpsw
+hlt
+idiv rax
+shr rbp,5
+ret
+rcr cx,5
+cli
+neg ah
+or rcx,86
+ret
+nop
+scasw
+rcr bl,2
+add esi,eax
+jmp [edx]
+rol ecx,3
+cld
+lock
+std
+wait
+jmp [ecx]
+syscall
+lahf
+jmp [ebp]
+idiv al
+cmp [rbx],rdi
+add [edi],ecx
+mul ah
+inc rdx
+wzs7920732864:
+or ax,13
+rol ebx,1
+lahf
+div dx
+xor [rbp],rcx
+stc
+sal rbp,8
+cli
+stc
+lock
+lahf
+mov cl,36
+
 div rax
 pause
 shr esi,2
