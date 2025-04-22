@@ -1,3 +1,42 @@
+lock
+wait
+test dx,dx
+.Ut221195490:
+call [edx]
+call [ecx]
+sar esi,4
+sub rcx,rax
+mul rcx
+rcl edx,1
+inc ch
+rol bl,2
+call [ebx]
+add edx,5
+inc ch
+idiv ah
+lodsw
+lodsb
+dec rdi
+jmp [eax]
+sbb [rdi],rbx
+inc cl
+sal al,4
+mul edx
+scasw
+ret
+shr dx,6
+lock
+cmpsw
+lahf
+neg edx
+test rcx,81
+rol ah,1
+sal ah,7
+cmp ch,ch
+ret
+cli
+lodsb
+
 cmp [rdi],rcx
 jmp [ecx]
 rdtsc
@@ -25,7 +64,6 @@ neg rax
 add eax,31
 pause
 neg ax
-
 shr al,8
 add rcx,72
 rcr esi,2
