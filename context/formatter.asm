@@ -1,3 +1,50 @@
+pause
+div ecx
+or [rdx],rsi
+lock
+sal ebp,3
+cli
+sar dh,6
+shr cx,3
+neg rdi
+or [esi],ebx
+hlt
+shr cl,7
+call [esi]
+imul rbx
+jmp [eax]
+rol rbx,8
+mul ax
+wait
+or dh,dh
+jmp [ecx]
+idiv cx
+idiv ax
+mov [ecx],ebx
+adc [ebx],ebx
+dec ax
+sbb [rsi],rbx
+inc rbp
+rcl eax,7
+jmp [ebp]
+call [ebx]
+rol rdi,8
+cli
+jmp [esi]
+sar edi,8
+stc
+sal rdi,3
+hlt
+neg ebp
+rol ebx,3
+sbb [rbp],rdx
+jmp [edx]
+lodsw
+jmp [esi]
+idiv bh
+ret
+sti
+
 lock
 wait
 test dx,dx
