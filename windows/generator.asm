@@ -1,3 +1,39 @@
+wait
+cmp ecx,eax
+shl rax,5
+jmp [edx]
+neg rcx
+jmp [eax]
+sar dl,3
+scasb
+rcl cx,5
+xor [ecx],edx
+ret
+ror edi,3
+cmpsw
+sub ch,ch
+cld
+pause
+sal rcx,6
+std
+clc
+clc
+call [edx]
+or rcx,rcx
+.T0psxkTMLW950063655:
+rcr eax,7
+std
+neg rdx
+or ah,ah
+shr dh,5
+jmp [eax]
+imul dl
+imul dx
+call [eax]
+jmp [ebx]
+lodsb
+rol cx,3
+
 stc
 dec ebp
 adc [ebx],eax
