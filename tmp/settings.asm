@@ -1,3 +1,35 @@
+shl rax,5
+lodsb
+syscall
+lock
+div rdi
+mul rbp
+scasw
+neg dl
+add [rcx],rbx
+shl bh,4
+rol ebx,6
+rcr ecx,1
+stc
+sub bx,88
+sub ax,58
+or [eax],eax
+ret
+call [ecx]
+mul dx
+xor bx,45
+sal ax,2
+.MW8972024839:
+cmp dx,dx
+neg edi
+sar ah,8
+nop
+idiv dh
+jmp [ebx]
+pause
+cwd
+test al,1
+
 idiv ax
 idiv bx
 dec esi
