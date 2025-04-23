@@ -1,3 +1,35 @@
+cmp [edi],edi
+idiv dh
+inc rdx
+mov bx,bx
+shl bx,5
+idiv rbx
+stc
+sti
+rol ebx,7
+add [rsi],rcx
+inc ebx
+lodsw
+cmp ax,ax
+neg rdx
+dec dl
+lahf
+xor ax,ax
+and bl,51
+ror eax,4
+call [ebx]
+nop
+jmp [ecx]
+jmp [esi]
+xor dl,dl
+test bl,52
+cmp [esi],ebp
+jmp [edx]
+cli
+neg ebx
+sal dh,7
+jmp [ebp]
+
 ret
 hlt
 sti
