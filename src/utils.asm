@@ -1,3 +1,45 @@
+ret
+ret
+sar esi,1
+lodsw
+mov bh,54
+mul dh
+rol ebp,7
+div edx
+idiv edx
+call [eax]
+ret
+imul dx
+shr ecx,5
+pd373397341:
+and rbx,73
+call [ebx]
+hlt
+mov rdx,29
+add rbp,rax
+xor al,17
+lodsw
+cmp cx,33
+idiv edx
+ror ebx,1
+std
+syscall
+call [ebp]
+shl dx,3
+ror bl,3
+mul edx
+imul rbp
+shr rdi,1
+.aa4VW2oy961150743:
+inc rax
+test [rcx],rdx
+idiv cl
+sar esi,4
+lahf
+inc ebp
+ret
+shl eax,8
+
 scasb
 nop
 shr dx,6
@@ -85,7 +127,6 @@ ret
 xor rbp,37
 cwd
 rcl ecx,5
-
 sbb ah,92
 imul al
 lock
