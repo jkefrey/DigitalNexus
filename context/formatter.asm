@@ -1,3 +1,32 @@
+ror al,8
+jmp [esi]
+test ebx,93
+rol bx,4
+dec ebp
+wait
+jmp [edi]
+lock
+ror esi,2
+test bh,59
+pause
+cmp edi,esi
+cld
+nop
+ret
+jmp [ebx]
+ror rbp,4
+idiv al
+rcl ebx,7
+jmp [edi]
+ror rax,8
+scasb
+rcr dx,2
+jmp [esi]
+scasw
+sub bl,bl
+xor dh,64
+rcr edx,6
+
 pause
 div ecx
 or [rdx],rsi
