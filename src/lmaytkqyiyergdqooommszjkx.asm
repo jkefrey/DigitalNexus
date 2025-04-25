@@ -1,3 +1,34 @@
+jmp [esi]
+and [edx],eax
+xor [rcx],rbx
+neg dx
+sal ch,2
+mul ax
+mul rbp
+add ebx,ebp
+cmpsw
+imul dx
+add ax,52
+call [esi]
+and dl,27
+ret
+pause
+syscall
+rcr rbp,4
+shl rbx,3
+call [edi]
+mov ch,ch
+dec ah
+test cx,33
+add dh,24
+sar ah,1
+syscall
+rol ecx,7
+ret
+xor cx,56
+sal rax,6
+lock
+
 or [rdx],rdi
 rcl dx,5
 mul ax
