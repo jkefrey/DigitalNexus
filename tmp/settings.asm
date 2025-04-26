@@ -1,3 +1,37 @@
+rcl ax,2
+cmp bh,44
+lock
+sal ax,3
+xor bl,48
+sar rax,1
+adc ch,78
+wait
+ret
+adc rsi,rsi
+cld
+scasw
+jmp [esi]
+sar dx,8
+or [ebx],edi
+sar ch,1
+idiv bl
+dec bl
+mul rdx
+and ecx,eax
+nop
+cli
+cmp bl,2
+jmp [eax]
+wP359193907:
+ret
+K8kw5H9762919163:
+shl rax,1
+stc
+sti
+jmp [ebx]
+rcr rdx,8
+shl dh,2
+
 shl rax,5
 lodsb
 syscall
