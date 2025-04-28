@@ -1,3 +1,45 @@
+ror ebx,3
+jmp [ebp]
+jmp [ebx]
+mov dx,ax
+cwd
+syscall
+scasb
+neg rsi
+or [rax],rcx
+test ebp,34
+scasw
+jmp [ebp]
+test rbx,40
+syscall
+sub dx,dx
+rol rax,4
+imul edi
+call [edx]
+cmp bh,41
+test ch,dh
+rol al,3
+jmp [esi]
+xor bl,55
+call [edx]
+ror rcx,7
+idiv dh
+clc
+test [rax],rcx
+neg bh
+jmp [ebp]
+jmp [eax]
+mul dx
+jmp [ecx]
+jmp [ebp]
+add [eax],ebp
+rcl rdi,5
+inc dl
+call [esi]
+sub ax,ax
+call [eax]
+shr ecx,5
+
 ror al,8
 jmp [esi]
 test ebx,93
