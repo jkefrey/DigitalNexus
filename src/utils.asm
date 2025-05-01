@@ -1,3 +1,41 @@
+sal rbx,7
+lahf
+sal rax,7
+nop
+shl rbx,7
+shr dh,8
+lodsw
+hlt
+shl cl,2
+jmp [ecx]
+mov dh,dh
+shr rbp,8
+rcl ecx,8
+shr edi,6
+shl dl,5
+stc
+adc dx,cx
+rdtsc
+ret
+call [esi]
+scasw
+imul edi
+ret
+ret
+std
+wait
+syscall
+rcr bl,6
+test [edx],ecx
+mov cx,16
+or ebx,eax
+cmp [ebx],edi
+jmp [edi]
+imul bh
+lodsb
+or rdx,rdi
+shl rdx,4
+
 ret
 ret
 sar esi,1
@@ -88,7 +126,6 @@ stc
 lock
 lahf
 mov cl,36
-
 div rax
 pause
 shr esi,2
