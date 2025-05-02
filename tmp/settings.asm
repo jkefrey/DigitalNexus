@@ -1,3 +1,40 @@
+ror rsi,6
+jmp [edi]
+rcr dx,8
+call [esi]
+hlt
+scasw
+hlt
+nop
+sal dh,2
+rol edi,3
+rcl rdi,8
+neg ax
+hlt
+wait
+sal rdi,1
+xor [ebx],esi
+dec edx
+ret
+jmp [edi]
+imul bh
+call [edx]
+sar esi,5
+add [esi],esi
+and rdx,6
+idiv eax
+call [edi]
+cmp dh,dh
+PA5O781634237:
+dec cx
+lodsw
+inc bx
+sbb cl,cl
+add cl,cl
+rcl bl,8
+call [esi]
+std
+
 rcl ax,2
 cmp bh,44
 lock
