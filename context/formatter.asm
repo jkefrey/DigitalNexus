@@ -1,3 +1,47 @@
+jmp [ebp]
+div ebp
+add dl,88
+test [esi],edx
+and cx,96
+shl rdx,5
+jmp [ebx]
+sar dl,8
+lodsb
+call [edi]
+jmp [edx]
+cmp ch,69
+sar edx,8
+call [edx]
+hlt
+or ax,ax
+imul dx
+wait
+neg rax
+nop
+or ecx,17
+clc
+lahf
+scasw
+and bx,10
+ror rdx,8
+neg rax
+lock
+sbb cl,cl
+imul rbp
+lodsb
+cld
+sub ah,60
+sub ax,39
+jmp [edx]
+cmp ax,ax
+jmp [esi]
+shr rdx,2
+sbb [rdx],rsi
+ErtXH878324932:
+std
+sar cl,5
+idiv cl
+
 ror ebx,3
 jmp [ebp]
 jmp [ebx]
