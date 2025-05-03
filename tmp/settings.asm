@@ -1,3 +1,35 @@
+xor ah,ah
+jmp [esi]
+mov dx,dx
+sal cl,1
+call [ebx]
+rcr al,7
+or ebp,47
+idiv bx
+and [ebp],ecx
+inc edx
+xor [rbx],rbp
+jmp [ebp]
+cld
+sar edx,4
+imul rsi
+scasb
+BF43969726:
+cmp [rax],rax
+inc ah
+adc bl,bl
+cmpsw
+cwd
+lodsw
+sti
+scasb
+cmp ebp,93
+sbb dx,dx
+shl cl,1
+rcr ebp,8
+cli
+or ax,ax
+
 ror rsi,6
 jmp [edi]
 rcr dx,8
@@ -136,7 +168,6 @@ neg bh
 ret
 mul ah
 ror cl,6
-
 pause
 shr bx,3
 sal ebx,4
