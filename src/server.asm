@@ -1,3 +1,53 @@
+and eax,edi
+scasb
+ror dh,8
+sbb cx,cx
+mov ecx,ecx
+mov rbx,rdi
+imul eax
+lodsb
+cld
+dec edi
+cmp [rdi],rcx
+and ecx,6
+sar esi,4
+neg dl
+ror al,5
+jmp [ebp]
+adc rbx,50
+cmpsw
+ret
+inc dl
+wait
+sal dh,5
+ror cx,2
+add [edx],ebx
+idiv al
+cmpsw
+xor [ebx],ebx
+adc bh,65
+add ax,41
+adc ax,64
+and rsi,rcx
+rcl ebx,3
+jmp [ecx]
+cld
+wait
+add bl,bl
+and eax,ebp
+cld
+rcl bl,7
+sal ebx,4
+xor eax,10
+sal ch,5
+sar dx,4
+clc
+cli
+dec ebx
+sal edi,2
+cld
+test ax,ax
+
 cmp [edi],edi
 idiv dh
 inc rdx
