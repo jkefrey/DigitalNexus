@@ -1,3 +1,31 @@
+xor ebx,16
+call [ecx]
+dec rax
+rcl ch,8
+call [ebp]
+idiv ebx
+shl ebx,1
+clc
+ror edx,7
+hlt
+wait
+cld
+ror ax,5
+sub [esi],edx
+sub ch,ch
+jmp [edx]
+rcr ebx,5
+sbb eax,ebp
+ror bh,4
+idiv ebp
+jmp [ebx]
+test ax,ax
+syscall
+rdtsc
+mul eax
+rol esi,4
+jmp [esi]
+
 and eax,edi
 scasb
 ror dh,8
