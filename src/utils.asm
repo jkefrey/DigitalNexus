@@ -1,3 +1,33 @@
+cld
+cmpsw
+inc esi
+hlt
+.tIPs7dcA1y639599703:
+sar bx,5
+inc ebx
+mov ax,bx
+call [ecx]
+TNiq23P2Cg443355661:
+xor [rax],rbp
+or ecx,esi
+neg bh
+neg ecx
+jmp [esi]
+div cx
+cli
+rcr rcx,4
+jmp [ebx]
+call [eax]
+inc ax
+or [esi],edi
+call [ecx]
+mov bh,84
+jmp [ecx]
+inc bl
+jmp [ebx]
+cmp esi,18
+rdtsc
+
 sal rbx,7
 lahf
 sal rax,7
