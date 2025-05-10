@@ -1,3 +1,30 @@
+jmp [edx]
+div ebx
+call [ebp]
+clc
+cmp [edx],esi
+scasw
+jmp [ebx]
+add dx,60
+.DKLVD524601273:
+lodsw
+inc dl
+ret
+scasw
+stc
+sar edx,6
+scasb
+xor [rbp],rcx
+.kIFHRVHC28779854:
+cmpsw
+and [rcx],rbx
+neg rbp
+call [ecx]
+lock
+imul rax
+sal bl,4
+xor dl,dl
+
 xor ah,ah
 jmp [esi]
 mov dx,dx
@@ -66,7 +93,6 @@ add cl,cl
 rcl bl,8
 call [esi]
 std
-
 rcl ax,2
 cmp bh,44
 lock
@@ -132,7 +158,6 @@ jmp [ebx]
 pause
 cwd
 test al,1
-
 idiv ax
 idiv bx
 dec esi
