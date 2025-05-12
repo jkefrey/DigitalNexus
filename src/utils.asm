@@ -1,3 +1,32 @@
+add [edx],esi
+idiv esi
+pause
+or bh,89
+hlt
+lahf
+rcl edi,2
+syscall
+nop
+and rcx,69
+mul edx
+imul edx
+wait
+clc
+nop
+stc
+call [ecx]
+sub [esi],ecx
+call [eax]
+mov [esi],eax
+neg al
+call [ecx]
+ror cl,7
+ret
+neg cx
+mul rsi
+std
+xor [rdx],rax
+
 cld
 cmpsw
 inc esi
