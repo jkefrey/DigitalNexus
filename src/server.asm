@@ -1,3 +1,32 @@
+rcl bx,1
+scasb
+or cl,69
+ror rbp,3
+nop
+jmp [ecx]
+mul al
+lodsb
+syscall
+call [ebx]
+cmp ax,18
+add ah,21
+adc [eax],ebp
+sal rcx,7
+or [rbp],rbx
+sbb cx,31
+jmp [ebx]
+idiv ch
+call [edi]
+imul ebp
+mul dl
+jmp [edx]
+sal dh,5
+mov dh,dh
+inc ebx
+or ebp,eax
+sti
+lodsw
+
 xor ebx,16
 call [ecx]
 dec rax
@@ -75,7 +104,6 @@ dec ebx
 sal edi,2
 cld
 test ax,ax
-
 cmp [edi],edi
 idiv dh
 inc rdx
