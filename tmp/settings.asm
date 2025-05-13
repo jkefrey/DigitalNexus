@@ -1,3 +1,39 @@
+mov eax,ecx
+sal rsi,3
+div ebx
+ret
+wait
+jmp [esi]
+std
+call [ebp]
+and al,dl
+inc ebx
+shl rbp,8
+shl cx,4
+cmp cx,19
+shr esi,5
+sal ax,8
+cmpsw
+add bh,bh
+lock
+div ax
+dec cx
+scasw
+std
+rcr ch,4
+ror dh,8
+ret
+syscall
+div dx
+hlt
+scasw
+cmp dl,76
+add [edx],edi
+pause
+imul bh
+cmpsw
+sal bx,6
+
 jmp [edx]
 div ebx
 call [ebp]
