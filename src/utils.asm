@@ -1,3 +1,36 @@
+neg rbp
+jmp [eax]
+shl esi,6
+ror esi,2
+rcr esi,7
+ret
+div rdi
+scasw
+lodsb
+or [edi],edi
+lock
+and bh,bh
+add cx,ax
+rcr rdi,4
+cmp bh,bh
+shr ebx,6
+ror dh,3
+rcl ecx,8
+imul bh
+mul cx
+pause
+ror dx,8
+rol edi,2
+syscall
+rdtsc
+call [esi]
+dec ebx
+std
+cmpsw
+call [edi]
+lock
+lahf
+
 add [edx],esi
 idiv esi
 pause
