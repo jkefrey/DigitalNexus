@@ -1,3 +1,37 @@
+sub ah,14
+div ecx
+xor ch,93
+jmp [esi]
+jmp [edi]
+lodsb
+test al,98
+sal ah,8
+lodsb
+cmpsw
+.LUQ869264186:
+imul dl
+stc
+rdtsc
+xor dl,dl
+cwd
+call [ebp]
+call [edx]
+lock
+lahf
+shl ch,1
+mov cx,cx
+sub rbp,4
+mov dx,83
+mul dx
+ror ebp,6
+sal ax,2
+ret
+call [ebx]
+rol dl,2
+sti
+stc
+jmp [eax]
+
 rcl rsi,4
 sar rdx,1
 lock
