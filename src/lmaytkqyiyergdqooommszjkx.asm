@@ -1,3 +1,47 @@
+rcl rsi,4
+sar rdx,1
+lock
+hlt
+sbb ah,19
+lodsb
+idiv ecx
+cmp [rsi],rax
+shl dx,7
+call [ebx]
+imul ebx
+jmp [ecx]
+jmp [edx]
+and ax,17
+test [rbp],rsi
+ZGDAJ0I5Mc298218297:
+div ah
+jmp [eax]
+call [ebx]
+std
+lock
+cwd
+or [rbx],rdi
+dec cx
+ret
+test dx,30
+wait
+inc ax
+lock
+call [ecx]
+jmp [esi]
+and rdx,rdi
+DiOc_G646191083:
+lodsw
+lodsw
+cld
+cwd
+call [ebx]
+rol dx,5
+adc [rbx],rcx
+cmpsw
+shl rdi,3
+sbb ah,66
+
 jmp [esi]
 and [edx],eax
 xor [rcx],rbx
@@ -28,7 +72,6 @@ ret
 xor cx,56
 sal rax,6
 lock
-
 or [rdx],rdi
 rcl dx,5
 mul ax
