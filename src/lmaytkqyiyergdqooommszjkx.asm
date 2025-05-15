@@ -1,3 +1,31 @@
+inc bl
+cwd
+neg ebp
+cmp [rsi],rcx
+sbb rsi,rbx
+mul rdi
+rol rbp,1
+jmp [ecx]
+lodsb
+neg eax
+test rax,rsi
+rcr bl,8
+sal ax,3
+neg dh
+hlt
+.pN675340907:
+sar rdx,5
+sbb [ebx],ebx
+rcl rbp,8
+scasb
+sub edi,ecx
+rcr rcx,8
+adc bx,dx
+mul ecx
+sal edi,7
+dec edx
+lock
+
 sub ah,14
 div ecx
 xor ch,93
@@ -75,7 +103,6 @@ adc [rbx],rcx
 cmpsw
 shl rdi,3
 sbb ah,66
-
 jmp [esi]
 and [edx],eax
 xor [rcx],rbx
