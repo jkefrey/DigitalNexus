@@ -1,3 +1,37 @@
+jmp [edi]
+lodsw
+rcr bl,3
+mov rbp,rbx
+sbb rbp,88
+lahf
+call [ecx]
+scasb
+dec rbx
+jmp [edi]
+sal bx,2
+ret
+syscall
+ret
+shl edi,1
+call [esi]
+rcr bh,2
+ror bl,1
+inc ch
+add rdi,rax
+and ax,68
+div ch
+div bl
+inc dh
+call [ebx]
+shl ebx,1
+add dl,dl
+lodsw
+jmp [ebx]
+adc [rbx],rcx
+mul rdi
+lock
+jmp [edx]
+
 inc bl
 cwd
 neg ebp
