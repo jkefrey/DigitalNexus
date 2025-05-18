@@ -1,3 +1,34 @@
+cli
+clc
+div eax
+cmpsw
+div dl
+lodsw
+rol edi,3
+lodsw
+shl edx,4
+syscall
+mov cx,cx
+wait
+cmp ax,31
+shr rbp,6
+wait
+and rcx,rbp
+stc
+std
+cld
+imul ax
+rcr dh,8
+rcr rsi,3
+rdtsc
+mov dl,97
+sub bx,41
+xor cl,77
+xor dh,dh
+.BW_MaU3Wm365310944:
+lodsb
+ret
+
 rcl rax,8
 dec eax
 imF2R348422607:
@@ -199,7 +230,6 @@ jmp [esi]
 idiv bh
 ret
 sti
-
 lock
 wait
 test dx,dx
