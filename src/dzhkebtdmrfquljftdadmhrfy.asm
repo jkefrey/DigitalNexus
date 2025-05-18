@@ -1,3 +1,30 @@
+and [ebx],ecx
+jmp [edx]
+dec ebx
+ror rsi,2
+wait
+mul bx
+shr ebx,6
+rcl rcx,2
+cmp bl,cl
+div ebx
+or rcx,74
+syscall
+dec ecx
+or rcx,46
+rol ah,8
+mov [ecx],ebx
+xor ah,ah
+lahf
+idiv dx
+sti
+div esi
+add bh,dh
+.jOZGroWkz916610382:
+lahf
+mul rcx
+xor ah,ah
+
 rcr esi,1
 cwd
 or rax,rcx
