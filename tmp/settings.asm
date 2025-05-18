@@ -1,3 +1,44 @@
+add bl,bl
+rcl rcx,4
+clc
+idiv dl
+rcl edx,3
+stc
+mul rbx
+scasb
+call [ebp]
+jmp [edi]
+cmpsw
+inc bh
+pause
+mov [rcx],rdi
+jmp [ebx]
+sal ah,8
+div rbp
+test rdi,80
+cld
+test cl,cl
+call [eax]
+scasb
+sbb rdi,rsi
+add al,al
+adc dl,dl
+sal rax,7
+ror bh,5
+lock
+cmp [edx],ebp
+adc dx,86
+dec rdi
+inc dx
+sal rbx,5
+clc
+sbb bx,97
+sar rax,1
+sub dx,82
+inc rax
+inc cx
+sub [rsi],rbx
+
 mov eax,ecx
 sal rsi,3
 div ebx
