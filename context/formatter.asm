@@ -1,3 +1,43 @@
+rcl rax,8
+dec eax
+imF2R348422607:
+lodsb
+.HmHrf3g12693400941:
+cli
+rcr ah,7
+inc ebx
+clc
+jmp [ebx]
+div rcx
+scasb
+lodsw
+cld
+scasw
+cwd
+cwd
+wait
+inc rbx
+shr esi,3
+sar bx,1
+scasw
+rdtsc
+mov [eax],edx
+rdtsc
+mul rax
+shr rdi,8
+cmp [eax],ebp
+add ebp,esi
+nop
+mov dx,dx
+scasb
+cld
+div rbp
+ret
+xor [rdx],rdx
+div edi
+imul eax
+sal ch,1
+
 jmp [ebp]
 div ebp
 add dl,88
