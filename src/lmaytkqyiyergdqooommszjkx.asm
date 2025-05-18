@@ -1,3 +1,31 @@
+call [ebx]
+jmp [eax]
+jmp [edi]
+cmpsw
+or dh,dh
+lahf
+jmp [eax]
+and bx,34
+mul cx
+xor [rcx],rcx
+shl rdx,1
+call [eax]
+rcr cx,3
+jmp [eax]
+pause
+rdtsc
+jmp [edx]
+shr bh,7
+clc
+neg dx
+scasw
+ret
+div rbp
+sub [rcx],rbp
+or rdi,18
+idiv bh
+ret
+
 jmp [edi]
 lodsw
 rcr bl,3
