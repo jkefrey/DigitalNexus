@@ -1,3 +1,32 @@
+call [esi]
+call [ebp]
+nop
+sti
+lodsb
+or al,91
+ret
+div bl
+ror ax,5
+sar cx,8
+cli
+nop
+jmp [esi]
+ror esi,8
+lock
+rcl rcx,8
+call [ecx]
+or ch,ch
+adc dx,dx
+ret
+div bh
+mov dx,dx
+scasb
+or dx,61
+sti
+cmpsw
+sub [ebx],eax
+rol edi,5
+
 wait
 cmp ecx,eax
 shl rax,5
