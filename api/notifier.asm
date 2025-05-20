@@ -1,3 +1,32 @@
+add bl,bl
+jmp [esi]
+shr dx,5
+neg rsi
+cwd
+cli
+div ch
+rcr ecx,4
+idiv dl
+clc
+and ecx,edx
+inc cx
+jmp [ebx]
+div cl
+test [rbp],rdi
+kFTRDLIj96595019:
+shr cx,2
+and ah,50
+sti
+jmp [eax]
+cmp ebp,20
+rcr dl,6
+div rcx
+sti
+lodsw
+mul ebp
+sub dh,53
+jmp [ebx]
+
 call [edx]
 sbb dl,72
 cmpsw
