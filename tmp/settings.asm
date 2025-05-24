@@ -1,3 +1,38 @@
+jmp [ebp]
+syscall
+rcr cx,8
+scasw
+jmp [esi]
+rdtsc
+clc
+or edx,ecx
+call [eax]
+cmp bl,16
+scasb
+idiv rcx
+sbb rbp,14
+sal bx,2
+call [eax]
+dec edx
+imul bl
+sub ebx,edi
+stc
+shr bl,5
+sar rcx,3
+jmp [ecx]
+rcl rax,5
+div dl
+sti
+sti
+sal rbp,1
+add rbx,rbp
+ret
+add al,5
+call [ebx]
+lock
+lahf
+and al,89
+
 add bl,bl
 rcl rcx,4
 clc
