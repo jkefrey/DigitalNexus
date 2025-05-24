@@ -1,3 +1,37 @@
+and al,97
+dec rbx
+rcl ax,3
+cmp dx,ax
+syscall
+ror dx,3
+pause
+cmp cl,54
+rcl dl,1
+cmp [edx],edx
+d5Bx216387201:
+sub dx,dx
+neg esi
+sbb cx,cx
+rcl dh,1
+call [edi]
+ret
+sbb dh,dh
+stc
+sti
+pause
+shl cx,7
+shl dx,5
+scasw
+wait
+ret
+lahf
+imul ebx
+idiv cl
+shr rsi,2
+ret
+cld
+neg rdx
+
 rcl bx,1
 scasb
 or cl,69
