@@ -1,3 +1,43 @@
+lahf
+ror rdx,6
+or rdi,rbx
+rcr al,2
+shr bl,8
+test [edi],esi
+rol rdx,5
+add bh,dh
+ret
+call [edi]
+std
+mov rsi,43
+neg rcx
+jmp [edx]
+jmp [eax]
+nop
+call [ecx]
+wait
+clc
+cli
+rdtsc
+call [edx]
+syscall
+inc bl
+div dl
+stc
+ret
+imul dh
+and esi,edx
+sti
+cmp [esi],ebx
+scasb
+test [eax],eax
+lock
+rcr bh,1
+rol bl,8
+and bh,bh
+and dx,cx
+dec ecx
+
 cli
 clc
 div eax
