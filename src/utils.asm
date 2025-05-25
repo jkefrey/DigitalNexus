@@ -1,3 +1,31 @@
+call [edi]
+sal al,6
+cli
+idiv rcx
+or rdx,77
+shl rdi,3
+clc
+cmp rax,18
+inc edx
+shr eax,8
+add ah,46
+rcl rbp,4
+nop
+cld
+add rbx,72
+sal dh,6
+ret
+call [edx]
+idiv bl
+sub cx,cx
+shl dl,5
+sal dl,7
+scasb
+or eax,45
+test [rbx],rdx
+scasw
+lock
+
 neg rbp
 jmp [eax]
 shl esi,6
@@ -169,7 +197,6 @@ lahf
 inc ebp
 ret
 shl eax,8
-
 scasb
 nop
 shr dx,6
@@ -298,7 +325,6 @@ call [edx]
 call [eax]
 shr rbp,6
 scasw
-
 imul ch
 .L404851459:
 dec ebx
