@@ -1,3 +1,52 @@
+inc ax
+adc esi,eax
+xor ah,11
+test cx,ax
+div dl
+and edi,ecx
+cmp [rbx],rdi
+inc eax
+clc
+adc [edx],ecx
+lodsb
+ret
+call [edx]
+sal ch,7
+call [edx]
+cli
+call [ebp]
+sti
+rcl rbp,8
+ror rcx,5
+lodsb
+mul cx
+dec cx
+sti
+sar dx,8
+inc rdx
+add rdi,52
+adc al,67
+ror rcx,8
+rol bx,7
+cmpsw
+call [edi]
+sal bh,4
+neg rdx
+call [ebx]
+syscall
+ret
+sbb dl,84
+and ah,11
+inc dl
+imul ax
+clc
+ror ch,1
+rdtsc
+syscall
+sar rcx,3
+rcl dx,2
+ror ebx,4
+
 call [ebx]
 jmp [eax]
 jmp [edi]
