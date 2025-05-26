@@ -1,3 +1,29 @@
+ror bh,6
+mul ecx
+scasb
+shl rdi,4
+lahf
+rcr edi,2
+lodsw
+rol edx,6
+rol rbx,8
+jmp [ebp]
+cld
+sub rax,rdx
+jmp [eax]
+hlt
+add dx,97
+sal dx,4
+ror ebx,7
+ret
+rcr cx,4
+jmp [edi]
+test dh,dh
+clc
+shr dh,4
+lodsw
+adc ebp,43
+
 add bl,bl
 jmp [esi]
 shr dx,5
