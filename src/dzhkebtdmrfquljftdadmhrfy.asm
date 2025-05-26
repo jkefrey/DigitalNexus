@@ -1,3 +1,34 @@
+.Ei405604601:
+shl ah,8
+dec rcx
+and edi,ebx
+sti
+lodsb
+sti
+and [edx],ebx
+ret
+ret
+xor ebp,ecx
+rcr rdi,4
+ByOu874243978:
+sar ebx,1
+div edx
+jmp [eax]
+cwd
+imul eax
+jmp [ebp]
+rol bx,1
+jmp [esi]
+jmp [ebp]
+rdtsc
+rol bh,2
+mul rcx
+xor [esi],ebp
+ret
+ret
+lodsb
+idiv eax
+
 and [ebx],ecx
 jmp [edx]
 dec ebx
