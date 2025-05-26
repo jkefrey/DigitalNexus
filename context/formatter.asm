@@ -1,3 +1,54 @@
+call [edi]
+ror bh,2
+scasb
+nop
+rol esi,6
+dec bx
+scasw
+or dx,54
+mov al,al
+hlt
+jmp [edi]
+inc rdi
+sbb dh,39
+cwd
+jmp [esi]
+shr dx,5
+scasw
+sbb ebp,79
+ror eax,7
+call [ecx]
+call [ebp]
+div dh
+jmp [ebx]
+sub [rax],rax
+shl cx,2
+mov dh,3
+sar cl,5
+mul ch
+cli
+ret
+cmp al,96
+ror ebx,5
+xor rdi,rbx
+rcl ch,8
+rol eax,2
+lodsb
+adc rsi,rbp
+ret
+add [edi],ecx
+xor dl,dl
+or cx,cx
+sti
+cmp cl,cl
+idiv al
+and ch,41
+rdtsc
+lahf
+xor ah,81
+jmp [ebx]
+call [esi]
+
 lahf
 ror rdx,6
 or rdi,rbx
@@ -152,7 +203,6 @@ ErtXH878324932:
 std
 sar cl,5
 idiv cl
-
 ror ebx,3
 jmp [ebp]
 jmp [ebx]
