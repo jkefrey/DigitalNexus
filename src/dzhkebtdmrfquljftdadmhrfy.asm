@@ -1,3 +1,38 @@
+scasw
+call [ecx]
+div rdi
+ret
+cmpsw
+shr rdx,7
+BlHifMYy6n727508645:
+jmp [ebx]
+imul dh
+dec al
+mov bh,bh
+inc rbx
+adc dl,dl
+sar ax,1
+neg bh
+sal edx,3
+cwd
+inc dl
+mul rdx
+hlt
+jmp [ecx]
+scasw
+jmp [eax]
+rol dh,6
+or dx,dx
+lodsw
+idiv eax
+std
+ret
+ror dx,5
+lodsw
+hlt
+ror edi,8
+rcr rcx,3
+
 .Ei405604601:
 shl ah,8
 dec rcx
