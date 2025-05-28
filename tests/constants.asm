@@ -1,3 +1,46 @@
+mul rbx
+syscall
+rcl dl,3
+sal ah,5
+dec dx
+test dh,94
+cmp bx,bx
+sbb al,90
+or edx,10
+ret
+and [ecx],esi
+sar cl,1
+mul bl
+call [edi]
+cmpsw
+ret
+ret
+lahf
+jmp [eax]
+cmp ax,ax
+adc bh,bh
+mov dx,dx
+ret
+lock
+div rcx
+call [ecx]
+or dl,78
+nop
+or [rax],rbx
+sar rbp,7
+cld
+rol rdi,3
+clc
+imul ebx
+idiv al
+lodsb
+cmpsw
+idiv cl
+test bx,ax
+cli
+hlt
+std
+
 inc ebp
 shr rbx,2
 lodsw
