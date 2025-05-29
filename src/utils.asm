@@ -1,3 +1,52 @@
+cmp cx,25
+cwd
+nop
+ret
+cmp [rsi],rcx
+mul ax
+idiv dh
+rol rbp,7
+dec bx
+jmp [edx]
+shl bl,4
+shl ch,6
+sar ax,3
+scasw
+lahf
+cld
+shr dh,2
+lahf
+.Jn6x8GF469757436:
+sar ax,3
+cld
+sti
+lodsb
+cmp [ecx],eax
+rol bx,4
+cmpsw
+std
+rcr ah,1
+idiv cl
+rol bh,6
+sub rbp,78
+imul rdx
+ret
+stc
+call [edx]
+sar ecx,3
+wait
+shl dx,4
+rol dh,7
+sub rdx,rbx
+call [edi]
+imul eax
+wait
+call [ecx]
+neg al
+lodsw
+jmp [ebp]
+sti
+
 call [edi]
 sal al,6
 cli
@@ -58,7 +107,6 @@ cmpsw
 call [edi]
 lock
 lahf
-
 add [edx],esi
 idiv esi
 pause
