@@ -1,3 +1,52 @@
+mul bl
+sbb bh,81
+syscall
+call [eax]
+rcl rcx,8
+mov rbx,rcx
+and [rbp],rax
+ret
+dec ecx
+test rdx,86
+mov [rdx],rax
+nop
+pause
+and [edi],ebp
+idiv dx
+add cl,al
+add ebx,ebp
+and dx,cx
+mul cl
+sbb ch,98
+call [ecx]
+mul ecx
+cmpsw
+lodsb
+jmp [esi]
+call [eax]
+ror dh,6
+test dx,3
+imul rcx
+stc
+lodsb
+jmp [esi]
+test esi,77
+add rbx,73
+cmpsw
+neg edi
+cwd
+add rbx,76
+pause
+test ebx,ebx
+stc
+call [ebx]
+ret
+adc edi,13
+ror dx,7
+mov edx,92
+xor ah,ah
+ror edi,5
+
 mov dx,dx
 .ryE8Ye2Mb37459123:
 lodsb
