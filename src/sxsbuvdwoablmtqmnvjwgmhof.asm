@@ -1,3 +1,43 @@
+mov dx,dx
+.ryE8Ye2Mb37459123:
+lodsb
+nop
+shl bh,2
+ror rcx,7
+inc edx
+wait
+sal ebx,1
+rdtsc
+rol rdi,1
+std
+ror rbp,2
+div rcx
+mov al,al
+and esi,eax
+jmp [ebp]
+xor ebp,ecx
+mov bl,bl
+shl esi,8
+call [esi]
+sal ax,7
+rol ch,8
+shl rdi,8
+dec ebx
+add dx,dx
+xor bl,55
+dec rdx
+div al
+lodsb
+or [rsi],rax
+ret
+div dl
+lodsw
+ret
+or [rdx],rcx
+jmp [eax]
+imul ax
+v7e6dD_My407375906:
+
 call [edx]
 test al,65
 inc dh
