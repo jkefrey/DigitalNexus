@@ -1,3 +1,44 @@
+pause
+and ch,ch
+call [eax]
+shl ecx,7
+add [rdi],rdx
+lock
+.eZr787Ob68344276:
+imul ah
+mov ebp,ebp
+cwd
+xor ch,31
+stc
+xor [rbx],rbp
+cld
+lock
+rcr bx,6
+jmp [esi]
+call [eax]
+call [ebp]
+stc
+jmp [edx]
+rcr esi,8
+cmp [rsi],rbx
+shr al,4
+pause
+nop
+wait
+mov rbx,11
+jmp [ebp]
+rcl ax,6
+shr ax,7
+lodsb
+call [eax]
+and dl,76
+shl bx,1
+shr dh,1
+syscall
+hlt
+lock
+lodsw
+
 call [edi]
 ror bh,2
 scasb
@@ -273,7 +314,6 @@ scasw
 sub bl,bl
 xor dh,64
 rcr edx,6
-
 pause
 div ecx
 or [rdx],rsi
