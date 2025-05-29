@@ -1,3 +1,37 @@
+rdtsc
+call [ecx]
+lock
+shl edx,5
+mov dh,49
+test edi,15
+nop
+scasw
+sbb ah,ch
+mov dx,dx
+adc dx,dx
+wait
+pause
+sti
+wait
+adc cl,38
+sal rdi,7
+call [edx]
+lodsw
+syscall
+clc
+shl ebx,1
+jmp [eax]
+rol rcx,4
+cld
+sal bx,6
+cmpsw
+ret
+clc
+cmpsw
+shl bl,2
+rcl al,7
+sti
+
 pause
 and ch,ch
 call [eax]
