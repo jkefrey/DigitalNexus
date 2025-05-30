@@ -1,3 +1,33 @@
+call [edx]
+test dl,51
+hlt
+rdtsc
+sbb cl,cl
+shr ebp,8
+sal ebp,8
+xor rsi,rdi
+scasw
+shr dh,7
+sal ah,5
+jmp [eax]
+.e75r8MS_9674695013:
+ret
+.ULJC387477767:
+and [rsi],rsi
+rol rbp,3
+sti
+nop
+cmpsw
+cmp cx,cx
+sal rbp,3
+test dh,dh
+jmp [ebp]
+clc
+mov ax,dx
+rol ch,1
+ror rbp,2
+jmp [ebx]
+
 jmp [ebp]
 syscall
 rcr cx,8
@@ -238,7 +268,6 @@ sti
 jmp [ebx]
 rcr rdx,8
 shl dh,2
-
 shl rax,5
 lodsb
 syscall
