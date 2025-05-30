@@ -1,3 +1,34 @@
+stc
+ror eax,4
+lodsb
+scasb
+ret
+VKH544272300:
+adc [ecx],edi
+cmp dl,dl
+neg dl
+or ch,ch
+lock
+mul bx
+cld
+rcr ch,4
+jmp [eax]
+ret
+ret
+call [edi]
+call [edx]
+xor [rdi],rdx
+scasb
+call [esi]
+wait
+mov cx,cx
+idiv dl
+rcr rdx,6
+mov cx,78
+adc bx,100
+cld
+adc ax,90
+
 or [rcx],rsi
 lock
 lodsb
