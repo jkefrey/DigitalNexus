@@ -1,3 +1,47 @@
+or [rcx],rsi
+lock
+lodsb
+call [ebx]
+or ax,92
+jmp [eax]
+adc [rbx],rdx
+jmp [edi]
+dec bx
+jmp [edi]
+div cx
+test [eax],edi
+rol rax,3
+test cx,85
+shl dx,2
+add [rbp],rbp
+pause
+jmp [ebx]
+sal ah,8
+neg cl
+dec dx
+mov [edi],esi
+and edx,57
+nop
+test [rcx],rdi
+shl esi,8
+add dl,dl
+test [rsi],rax
+rcr rax,8
+sbb cl,89
+imul rbx
+xor ah,31
+.SaVFh353943589:
+neg rdi
+cld
+xor [rbx],rbx
+cld
+cli
+jmp [ebx]
+xor bh,ch
+call [ebx]
+idiv ebx
+cmpsw
+
 call [esi]
 call [ebp]
 nop
@@ -123,7 +167,6 @@ call [eax]
 add cx,cx
 idiv edx
 add dh,92
-
 mov [rdx],rcx
 sar rdi,4
 inc ch
