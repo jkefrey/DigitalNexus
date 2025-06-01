@@ -1,3 +1,44 @@
+ror cx,8
+cwd
+add [ecx],esi
+hlt
+shr rbx,8
+sal ah,8
+test dx,24
+rcl dl,6
+shl ebp,1
+rol cl,2
+stc
+std
+ret
+test [rdi],rbx
+ret
+idiv cl
+call [edi]
+stc
+add [eax],edx
+rcl rax,3
+ret
+ror rbp,5
+dec dh
+call [edi]
+imul rsi
+shr bh,6
+rcr rcx,1
+call [edx]
+xor bx,48
+cmp bl,bl
+sjJZrOCYO428461407:
+FQJ479395993:
+cli
+ret
+jmp [ecx]
+mul edx
+call [edi]
+div dx
+jmp [edi]
+shl dl,4
+
 mul rbx
 syscall
 rcl dl,3
