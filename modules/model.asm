@@ -1,3 +1,45 @@
+mov dh,56
+shl ah,3
+rcl bh,2
+xor [esi],edx
+imul bx
+sar cl,8
+xor [rsi],rsi
+ror edi,2
+idiv edx
+rcr dx,7
+cmp dh,97
+rol rbp,3
+shl dl,6
+cli
+rdtsc
+scasw
+inc rbp
+add dh,dh
+call [edi]
+ret
+wait
+test [edi],esi
+jmp [ebp]
+rdtsc
+jmp [ecx]
+shr ebx,2
+wait
+cmp [rbx],rcx
+lahf
+call [edx]
+jmp [edx]
+hlt
+lahf
+dec dl
+sti
+jmp [ecx]
+jmp [edx]
+imul bl
+adc rax,rcx
+call [eax]
+call [ecx]
+
 or dh,70
 imul rdx
 cmp [esi],eax
