@@ -1,3 +1,51 @@
+syscall
+sar rdi,5
+lock
+sar bl,1
+mov rdx,10
+rcl dh,1
+call [eax]
+add al,al
+call [ecx]
+syscall
+call [ecx]
+rcr dh,3
+stc
+scasb
+rcl ebx,1
+clc
+ret
+div rax
+cld
+shl bh,3
+xor rbp,59
+div rcx
+test ecx,ebx
+idiv ah
+cmpsw
+rol ch,4
+lahf
+jmp [ecx]
+mul al
+rdtsc
+inc ebp
+shl ch,7
+shl edi,7
+ret
+call [edi]
+jmp [ecx]
+syscall
+idiv rdi
+div ax
+lodsw
+imul dl
+cwd
+dec ebp
+hlt
+ret
+jmp [edi]
+dec ecx
+
 rdtsc
 call [ecx]
 lock
