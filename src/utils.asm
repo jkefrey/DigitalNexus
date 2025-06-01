@@ -1,3 +1,54 @@
+ret
+call [ebp]
+jmp [edx]
+rol dx,6
+imul rdi
+adc cl,75
+sub cl,89
+sti
+sub [edx],ebx
+test bl,82
+call [eax]
+jhTOEg3U628461256:
+xor [rax],rdx
+div al
+sbb rdi,rbx
+inc rbp
+sbb rdx,rdi
+adc ax,ax
+lahf
+call [edi]
+xor rdx,rax
+sub rax,rbx
+or bx,74
+mul bl
+sub [rdx],rbx
+mul edi
+adc dl,71
+nop
+ret
+idiv rax
+rcr al,5
+sar ecx,6
+rcr ecx,6
+xor ah,1
+test bx,dx
+and [rdx],rsi
+xor rsi,rdi
+scasw
+cmpsw
+call [edi]
+sar bl,3
+wait
+rdtsc
+sal edx,2
+sar dh,2
+scasb
+shr bx,1
+scasb
+rcl al,8
+cmpsw
+
 cmp cx,25
 cwd
 nop
