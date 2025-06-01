@@ -1,3 +1,48 @@
+adc al,al
+nop
+dec edi
+cmpsw
+idiv ebx
+hlt
+mov bx,bx
+scasb
+hlt
+ret
+pause
+cmpsw
+mul dl
+mov [ebp],ecx
+rcr ch,2
+jmp [esi]
+rcr al,5
+test bx,89
+scasw
+add dx,85
+wait
+mov bh,dh
+adc ecx,67
+std
+cld
+adc [esi],ebp
+adc eax,23
+rcl ebx,3
+idiv rdi
+inc rbx
+shl bh,5
+jmp [esi]
+sar ecx,7
+div edi
+rdtsc
+jmp [edx]
+rol rcx,1
+nop
+xor dl,dl
+imul cx
+adc rbp,rdi
+lodsb
+syscall
+ret
+
 ret
 call [ebp]
 jmp [edx]
