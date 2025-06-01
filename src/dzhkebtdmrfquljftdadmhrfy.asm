@@ -1,3 +1,47 @@
+cmpsw
+call [eax]
+scasb
+rcl cl,1
+jmp [ebx]
+call [ecx]
+call [ebp]
+inc dl
+neg cx
+div edx
+rol rdx,2
+nop
+shl rsi,3
+or rbx,54
+nop
+ret
+add [ebp],ecx
+syscall
+lahf
+rol ecx,2
+jmp [ebp]
+shl ecx,7
+clc
+jmp [edx]
+jmp [edx]
+shl eax,2
+hlt
+dec edx
+rcr dx,7
+mul al
+cmpsw
+rcr rcx,7
+rcl dl,7
+add [ebp],edx
+call [ebx]
+lodsw
+add rsi,rdi
+sar rdi,2
+sar rbx,6
+jmp [edx]
+rcl edi,1
+mul dx
+sbb rbp,rsi
+
 scasw
 call [ecx]
 div rdi
@@ -32,7 +76,6 @@ lodsw
 hlt
 ror edi,8
 rcr rcx,3
-
 .Ei405604601:
 shl ah,8
 dec rcx
