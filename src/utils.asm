@@ -1,3 +1,51 @@
+ret
+idiv dl
+pause
+scasw
+shl eax,3
+ret
+pause
+inc esi
+nop
+cmp dl,dl
+sbb bh,6
+rcr esi,1
+rcl edx,3
+nop
+rol esi,8
+call [edx]
+jmp [esi]
+idiv cl
+scasw
+jmp [ebp]
+jmp [ecx]
+and ax,77
+ret
+stc
+hlt
+cwd
+jmp [esi]
+dec rdx
+cld
+rcl rbp,8
+mul bl
+lock
+inc eax
+nop
+or ah,51
+rdtsc
+jmp [esi]
+idiv esi
+nop
+sbb dx,74
+.y585338001:
+xor [ebp],ebp
+shr ebx,1
+adc dh,ch
+add ax,ax
+sar bh,5
+add ax,cx
+
 adc al,al
 nop
 dec edi
