@@ -1,4 +1,36 @@
 ret
+mul ah
+cld
+ror rsi,5
+pause
+syscall
+cli
+mul bh
+lodsw
+and ax,ax
+hlt
+mul ecx
+hlt
+std
+sti
+mul ax
+mul al
+nop
+scasb
+neg rdx
+mov bh,83
+shr bx,8
+ror dx,5
+hlt
+test edi,10
+scasw
+and bh,11
+rdtsc
+test dl,28
+or rbx,71
+mov [rbp],rbx
+
+ret
 idiv dl
 pause
 scasw
