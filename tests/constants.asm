@@ -1,3 +1,40 @@
+ret
+ret
+call [edx]
+nop
+cmp bh,49
+div rbx
+lodsw
+test eax,edx
+and rdi,rdi
+cwd
+ret
+ret
+div rcx
+xor [rsi],rbp
+idiv bl
+add dl,80
+div edx
+dec esi
+pause
+shl cx,8
+shl rax,5
+std
+wQvMflJgh356310270:
+xor ebx,59
+shr ebp,8
+mov [edx],ebx
+sal dl,2
+lahf
+jmp [edi]
+mul ch
+clc
+ror al,6
+adc cl,cl
+inc rdx
+shr ecx,8
+call [eax]
+
 scasw
 shr cl,3
 cwd
