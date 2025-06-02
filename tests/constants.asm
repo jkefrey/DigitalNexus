@@ -1,3 +1,31 @@
+scasw
+shr cl,3
+cwd
+inc bh
+ret
+ret
+shl ebp,3
+rcl bh,4
+rol cx,4
+or ch,16
+neg eax
+ret
+lahf
+shl ecx,3
+jmp [eax]
+rol cx,3
+hlt
+test [rsi],rsi
+call [edx]
+mul ebx
+adc cl,4
+cld
+rcl bx,3
+rdtsc
+scasb
+call [edi]
+scasw
+
 ror cx,8
 cwd
 add [ecx],esi
