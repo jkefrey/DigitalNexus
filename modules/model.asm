@@ -1,3 +1,47 @@
+mul dx
+hlt
+.dB455077060:
+scasb
+pause
+nop
+ret
+clc
+hlt
+lock
+jmp [ebx]
+or rdi,rsi
+test esi,ecx
+div dh
+neg cl
+jmp [esi]
+inc edx
+sal ch,7
+xor ch,ch
+div ebp
+rol ax,6
+xor bh,62
+call [edx]
+.IcciZEJ0H700285175:
+call [ebp]
+add bx,bx
+cwd
+rcl esi,7
+dec rdx
+cmp rdx,rcx
+adc dl,dl
+lahf
+neg ebx
+pause
+sti
+sti
+cli
+nop
+nop
+pause
+rol edx,2
+cmp [edx],edi
+jmp [edi]
+
 mov dh,56
 shl ah,3
 rcl bh,2
