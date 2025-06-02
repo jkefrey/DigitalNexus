@@ -1,3 +1,53 @@
+test [rsi],rax
+ret
+rcl ch,6
+idiv al
+and bx,dx
+std
+pause
+ror rbx,6
+rol bx,7
+jmp [ebx]
+lock
+sti
+rcr rdx,8
+idiv ax
+mul cx
+shr bx,6
+cwd
+call [ebp]
+mov [edi],edx
+cmp rsi,rcx
+mk004BRc16742918:
+call [ecx]
+nop
+inc ecx
+jmp [eax]
+lodsw
+rcl dh,3
+rcr ebp,2
+or bl,46
+stc
+call [ebp]
+dec rdi
+shl cx,2
+rcl ebx,2
+jmp [esi]
+call [edx]
+shr rbp,4
+ror bl,5
+sub [rdi],rbp
+cli
+rcr ah,3
+xor rdi,rbp
+sar ebx,5
+div cx
+lahf
+jmp [edx]
+rol esi,1
+rol al,5
+sal rbp,7
+
 ror bh,6
 mul ecx
 scasb
