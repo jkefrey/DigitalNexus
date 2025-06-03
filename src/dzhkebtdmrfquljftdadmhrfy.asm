@@ -1,3 +1,50 @@
+scasb
+idiv bl
+mov [edi],ebp
+jmp [edx]
+div ecx
+nop
+hlt
+div bh
+mov ch,94
+or cl,cl
+lahf
+std
+rcr rsi,3
+sar dx,3
+or [ecx],edx
+idiv bx
+add dx,dx
+mul ch
+jmp [ebx]
+jmp [edx]
+syscall
+test edx,edi
+and [ebp],eax
+shl dh,6
+shl rcx,7
+rdtsc
+lahf
+sbb cx,cx
+call [ebx]
+call [esi]
+sal rdi,7
+std
+inc edx
+sub ax,10
+and ebp,82
+lock
+add ah,ah
+test dh,12
+jmp [eax]
+cmp rbx,33
+and cx,cx
+clc
+neg rsi
+sbb ch,ch
+ret
+jmp [ebx]
+
 cmpsw
 call [eax]
 scasb
@@ -106,7 +153,6 @@ ret
 ret
 lodsb
 idiv eax
-
 and [ebx],ecx
 jmp [edx]
 dec ebx
