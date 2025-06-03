@@ -1,3 +1,32 @@
+xor [rdi],rcx
+sbb dx,dx
+mul bl
+idiv rdx
+mov [rdi],rbp
+add [rcx],rcx
+hlt
+shl ah,8
+ret
+cld
+rcr edx,7
+call [edx]
+lodsb
+cmp al,al
+rol rcx,1
+sbb bx,bx
+idiv eax
+pause
+.zh705777366:
+cwd
+cld
+sar bx,8
+shl dl,8
+neg rdi
+std
+imul cl
+dec ch
+cli
+
 ret
 ret
 call [edx]
