@@ -1,3 +1,46 @@
+lodsb
+sal cl,2
+mul al
+sti
+lock
+neg ebp
+hlt
+div rbp
+clc
+sar ax,6
+shl rbp,6
+rcl ebp,8
+cld
+imul ax
+jmp [eax]
+mov rax,rdx
+mul ax
+imul ah
+or dh,45
+sub ch,ch
+sbb dx,dx
+div ebx
+sar rsi,3
+idiv cx
+jmp [edi]
+cmp [esi],edi
+call [ebp]
+imul ecx
+xor ah,dh
+rcl rdi,7
+call [eax]
+neg bx
+clc
+lodsw
+mov ch,99
+rcl rbp,1
+idiv rcx
+call [eax]
+neg bl
+sbb esi,ebp
+inc edi
+hlt
+
 call [edx]
 test dl,51
 hlt
@@ -198,7 +241,6 @@ shl cl,1
 rcr ebp,8
 cli
 or ax,ax
-
 ror rsi,6
 jmp [edi]
 rcr dx,8
