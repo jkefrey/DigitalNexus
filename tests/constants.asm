@@ -1,3 +1,53 @@
+lodsb
+rdtsc
+neg rcx
+adc eax,47
+and rsi,rax
+sti
+adc dl,71
+rcl edi,1
+add dl,93
+inc ebp
+div al
+sti
+rcl cx,5
+ret
+hlt
+and [rsi],rsi
+and dx,dx
+xor ah,ah
+call [eax]
+shl bx,1
+neg ah
+mov ah,24
+shr esi,5
+sar dx,1
+ror dl,7
+adc [esi],edi
+imul rdi
+add rcx,57
+cli
+call [edi]
+rcl bx,3
+sti
+shr al,5
+jmp [ecx]
+call [eax]
+lodsw
+or [ecx],edi
+and ch,96
+adc cl,12
+mul dh
+sal rdi,1
+xor [rdx],rbp
+cld
+sbb ax,ax
+sub [ebp],ebp
+add bl,bl
+add dh,dh
+or ebp,ebx
+rcl rbx,4
+
 xor [rdi],rcx
 sbb dx,dx
 mul bl
