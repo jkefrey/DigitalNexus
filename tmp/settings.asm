@@ -1,3 +1,45 @@
+jmp [edx]
+rcr bh,1
+rdtsc
+ret
+stc
+sti
+idiv rcx
+imul cl
+sti
+sal bl,2
+neg ah
+stc
+mov dh,dh
+call [esi]
+rcr ax,2
+scasb
+cwd
+rcr esi,3
+ret
+sub edi,65
+and ah,ah
+xor dx,dx
+call [eax]
+or bh,bh
+rdtsc
+jmp [ecx]
+shr rbp,2
+call [edx]
+sbb dl,71
+cwd
+cmp [ebp],ecx
+shl rbx,5
+imul esi
+rcl bh,1
+neg bh
+dec rdx
+shr rbx,3
+sar rbp,7
+jmp [eax]
+call [edx]
+test [esi],ecx
+
 lodsb
 sal cl,2
 mul al
