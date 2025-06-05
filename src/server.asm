@@ -1,3 +1,39 @@
+adc bl,52
+wait
+ror dl,5
+cwd
+sar rbp,5
+rcl rsi,6
+imul rbx
+adc [rax],rdi
+idiv ecx
+shl ah,1
+jmp [eax]
+shl rsi,3
+imul dx
+ror al,5
+rdtsc
+call [ebp]
+.bLFQU617196105:
+call [eax]
+test rax,rdx
+lodsw
+sal bx,7
+ret
+stc
+adc ch,ch
+and dx,dx
+div ax
+add ebx,edx
+cmp bl,77
+cli
+jmp [ebx]
+rol ecx,4
+cld
+add dh,47
+test ax,ax
+test [ebp],eax
+
 and al,97
 dec rbx
 rcl ax,3
@@ -31,7 +67,6 @@ shr rsi,2
 ret
 cld
 neg rdx
-
 rcl bx,1
 scasb
 or cl,69
