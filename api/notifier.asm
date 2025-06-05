@@ -1,3 +1,39 @@
+syscall
+ret
+dec ax
+sub dh,dh
+cld
+idiv eax
+rcl bx,2
+cwd
+jmp [edi]
+stc
+dec bl
+imul dh
+test bx,33
+mul edx
+jmp [edi]
+syscall
+jmp [edx]
+test bh,12
+div esi
+sbb rbp,rax
+and [rdi],rsi
+ret
+lock
+cld
+sbb [rcx],rdx
+wait
+cli
+call [esi]
+rcr rsi,5
+cmp cl,cl
+cmp ah,ah
+call [esi]
+dec rdi
+ret
+rdtsc
+
 test [rsi],rax
 ret
 rcl ch,6
@@ -102,7 +138,6 @@ lodsw
 mul ebp
 sub dh,53
 jmp [ebx]
-
 call [edx]
 sbb dl,72
 cmpsw
