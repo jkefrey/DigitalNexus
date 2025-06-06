@@ -1,3 +1,46 @@
+idiv cx
+jmp [edi]
+call [edi]
+hlt
+syscall
+pause
+or al,46
+div ecx
+jmp [ebp]
+xor eax,2
+std
+call [ecx]
+or dh,ah
+add ax,17
+ror rdx,6
+clc
+cmp ebp,edx
+ror edi,5
+jmp [edi]
+neg bx
+sbb edx,70
+sbb [ecx],ecx
+clc
+RvP3U328240267:
+idiv al
+adc dx,84
+cwd
+or cl,cl
+sub dl,31
+jmp [edx]
+or dx,88
+div rbp
+sub al,11
+idiv rsi
+sbb bl,bl
+rcr edi,2
+sar rdx,2
+lodsb
+inc esi
+cmp [ebp],ebx
+inc bl
+mul rbx
+
 jmp [edx]
 rcr bh,1
 rdtsc
@@ -82,7 +125,6 @@ neg bl
 sbb esi,ebp
 inc edi
 hlt
-
 call [edx]
 test dl,51
 hlt
