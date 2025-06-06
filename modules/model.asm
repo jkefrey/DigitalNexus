@@ -1,3 +1,35 @@
+rcr rsi,5
+RJ1htFXQj476482117:
+ror ebp,5
+clc
+jmp [edi]
+and [esi],edi
+test rbp,rax
+lahf
+stc
+scasb
+or [rbx],rdx
+clc
+inc ah
+lodsb
+sub rsi,rdi
+add bl,bl
+cmp [ebx],edx
+clc
+imul ah
+shr ebx,3
+hlt
+sub rcx,92
+mov ecx,edx
+call [esi]
+div ch
+div al
+jmp [edx]
+rcl ax,5
+mov [rsi],rsi
+call [ecx]
+scasw
+
 hlt
 shr cx,5
 std
