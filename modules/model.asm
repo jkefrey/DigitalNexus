@@ -1,3 +1,41 @@
+hlt
+shr cx,5
+std
+idiv dh
+sar ax,8
+stc
+std
+sub [ebp],ebp
+and eax,ebp
+mul cx
+cld
+lahf
+ret
+mov bh,76
+nop
+div ch
+sal ebp,8
+cld
+syscall
+lock
+.zGh4iWU685775074:
+inc ecx
+SJn779394050:
+ror esi,7
+sti
+idiv edi
+cmp edx,27
+and edx,59
+sbb ch,56
+call [ecx]
+syscall
+ret
+cmpsw
+adc bl,bl
+sbb bx,dx
+cmpsw
+jmp [ebp]
+
 mul dx
 hlt
 .dB455077060:
