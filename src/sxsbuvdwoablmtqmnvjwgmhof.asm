@@ -1,3 +1,51 @@
+rol cl,5
+inc al
+sar esi,5
+lock
+adc [ebx],ebp
+sbb ax,ax
+call [ebx]
+add [rdi],rcx
+sal al,8
+jmp [esi]
+rcl edx,1
+or dx,95
+shr dx,8
+pause
+scasw
+jmp [eax]
+cmpsw
+shl rdx,6
+shr bh,3
+test rax,98
+.ogf495067140:
+adc ax,dx
+ret
+mov dx,29
+rol dl,1
+sbb cl,dl
+jmp [eax]
+wait
+cmp bl,cl
+lahf
+cmpsw
+lahf
+or ebx,ebp
+div rsi
+jmp [esi]
+shr rbp,3
+imul rax
+nop
+syscall
+stc
+nop
+Y1257223473:
+lock
+or [ebx],ecx
+add ebp,22
+scasb
+ret
+
 mul bl
 sbb bh,81
 syscall
