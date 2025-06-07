@@ -1,3 +1,50 @@
+test cx,86
+mov rdx,82
+lock
+nop
+div ebp
+jmp [edi]
+ret
+scasw
+xor rdx,rbp
+sbb ebx,64
+rol ecx,5
+stc
+std
+imul cl
+sub dh,dh
+stc
+add [ecx],ebx
+xor [edx],ecx
+ror ch,6
+sti
+ror dh,6
+lock
+scasb
+call [esi]
+lahf
+imul ecx
+add cx,11
+ror dx,8
+imul cx
+std
+sti
+jmp [ebp]
+syscall
+wait
+jmp [edx]
+sti
+adc cl,5
+jmp [ecx]
+scasb
+lahf
+rcl rbp,2
+sbb rdi,78
+shl al,3
+add ecx,esi
+scasw
+cmp edi,41
+
 syscall
 sar rdi,5
 lock
@@ -79,7 +126,6 @@ cmpsw
 shl bl,2
 rcl al,7
 sti
-
 pause
 and ch,ch
 call [eax]
@@ -282,7 +328,6 @@ xor [rdx],rdx
 div edi
 imul eax
 sal ch,1
-
 jmp [ebp]
 div ebp
 add dl,88
