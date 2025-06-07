@@ -1,3 +1,52 @@
+ret
+dec rcx
+rol esi,1
+adc [rbp],rdi
+lodsb
+or ebp,ebx
+syscall
+lodsw
+jmp [ebx]
+jmp [esi]
+wait
+syscall
+sar rcx,3
+cmp dh,dh
+inc dl
+stc
+cld
+rcl dl,3
+ret
+neg bx
+jmp [edi]
+and esi,ecx
+xor [edx],ebx
+rcl eax,1
+or rdi,78
+ror eax,7
+scasw
+and ebx,1
+rcr edi,4
+call [eax]
+sti
+sub rbx,rbx
+lodsw
+inc rbx
+shl bx,7
+sti
+shr dh,6
+cmp [edi],edx
+call [eax]
+sti
+scasw
+jmp [edx]
+cmp bx,83
+rdtsc
+clc
+shr al,4
+cli
+ret
+
 inc ax
 adc esi,eax
 xor ah,11
@@ -170,7 +219,6 @@ rol dl,2
 sti
 stc
 jmp [eax]
-
 rcl rsi,4
 sar rdx,1
 lock
