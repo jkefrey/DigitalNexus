@@ -1,3 +1,52 @@
+cwd
+sar ah,6
+call [edi]
+cli
+rol rcx,5
+lodsb
+test [edi],ecx
+imul cx
+neg bh
+sub [rsi],rbx
+jmp [edi]
+sal ecx,8
+mov dl,3
+ret
+call [esi]
+shr eax,5
+neg edi
+idiv bl
+idiv rbp
+scasw
+rdtsc
+wait
+lock
+add dh,dh
+adc ah,ah
+cld
+rol al,5
+neg rdx
+call [eax]
+pause
+sar rsi,8
+cwd
+ror ebp,1
+std
+jmp [edi]
+hlt
+add ah,71
+scasb
+xor al,al
+xor cx,56
+nop
+and dh,dh
+scasw
+add [edi],eax
+lock
+lahf
+clc
+hlt
+
 syscall
 ret
 dec ax
