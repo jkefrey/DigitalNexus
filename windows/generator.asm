@@ -1,3 +1,38 @@
+inc al
+idiv dh
+sbb [rsi],rax
+imul dx
+sal edx,6
+sub bx,41
+rgeqoAmdE492817403:
+test bx,89
+cli
+scasw
+add [rsi],rax
+rol ah,8
+idiv al
+sbb dl,dl
+mov ch,78
+neg dx
+sbb cl,cl
+inc esi
+add rax,rsi
+or [rbx],rax
+xor edi,26
+jmp [edi]
+mul al
+scasw
+lodsb
+div ebx
+sub ch,50
+xor dx,18
+call [ebp]
+and dl,al
+yZd166526105:
+rol dh,6
+jmp [eax]
+cmpsw
+
 stc
 ror eax,4
 lodsb
