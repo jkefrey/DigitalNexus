@@ -1,3 +1,33 @@
+adc [rcx],rbx
+dec rbp
+neg cx
+neg rbx
+imul bh
+add [eax],ebx
+lock
+sar rcx,5
+mov cx,cx
+rcr ah,5
+sbb ah,ah
+scasb
+call [ebx]
+sub [esi],ecx
+jmp [esi]
+div bl
+mul rax
+hlt
+jmp [esi]
+cmp [rbp],rdi
+rcl bx,6
+cld
+imul rdx
+adc edi,26
+ror ebx,3
+stc
+shl dl,2
+test eax,41
+add bx,bx
+
 mul edi
 div cl
 idiv dl
