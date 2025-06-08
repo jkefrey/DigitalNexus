@@ -1,3 +1,40 @@
+ror eax,1
+scasb
+lodsb
+syscall
+rcr bx,2
+sub [rbx],rcx
+hlt
+idiv al
+imul ch
+cld
+sbb [ebx],edi
+call [ecx]
+pause
+ror rax,3
+nop
+wait
+lodsb
+lahf
+cli
+mul ah
+lahf
+mov dx,44
+cli
+stc
+scasw
+wait
+scasw
+ret
+test cx,dx
+jmp [esi]
+call [edx]
+add [rbx],rdx
+sub [rax],rcx
+stc
+sal rbp,4
+ror bh,1
+
 jmp [ecx]
 sal al,6
 oJCT675475214:
