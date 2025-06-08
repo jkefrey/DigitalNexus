@@ -1,3 +1,36 @@
+mul edi
+div cl
+idiv dl
+rcr cl,1
+rcl ecx,7
+shr bx,2
+pause
+test dx,dx
+add ch,ch
+sar cl,5
+pause
+rcr esi,4
+dec al
+jmp [ebx]
+call [ecx]
+add dl,dl
+shr dx,8
+lodsb
+sar cx,5
+ror ah,1
+mov dl,66
+clc
+rdtsc
+hlt
+scasb
+std
+ret
+jmp [esi]
+std
+call [esi]
+jmp [ebp]
+rdtsc
+
 lodsb
 rdtsc
 neg rcx
