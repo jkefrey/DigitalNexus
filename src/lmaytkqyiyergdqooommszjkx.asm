@@ -1,3 +1,44 @@
+sbb rcx,rdx
+ret
+shr edi,2
+xor [rdx],rcx
+div dh
+add al,al
+div bx
+cmp [rcx],rax
+xor bl,bl
+call [esi]
+rdtsc
+pause
+inc dl
+sar rcx,6
+rol bx,4
+rcr ebx,6
+sbb cl,42
+xor al,dl
+mov [ebp],eax
+adc rax,rcx
+sti
+lodsb
+sal al,3
+sbb [ecx],ecx
+div esi
+ror al,1
+imul ch
+jmp [esi]
+sar cl,8
+test eax,esi
+rdtsc
+sar dx,8
+rcl ebp,5
+ret
+idiv ebx
+clc
+jmp [eax]
+call [ebp]
+syscall
+sub bl,14
+
 ret
 dec rcx
 rol esi,1
@@ -336,7 +377,6 @@ mov [rsi],rbx
 or ax,ax
 rcr bl,6
 neg cl
-
 clc
 nop
 imul esi
