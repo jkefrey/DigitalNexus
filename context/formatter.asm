@@ -1,3 +1,52 @@
+cli
+sub [rbx],rax
+imul dh
+inc esi
+jmp [ebp]
+m4866P177683618:
+xor al,46
+rcr rdx,8
+imul ebx
+lahf
+xor bx,bx
+call [esi]
+clc
+nop
+test [ebp],eax
+and rsi,34
+add dx,25
+mov ecx,82
+syscall
+nop
+test [rax],rax
+scasb
+rcl bl,5
+shr rbx,7
+test edx,ebx
+call [eax]
+jmp [edx]
+jmp [ebx]
+imul eax
+sbb ch,98
+syscall
+sal dh,4
+shr ebp,7
+cwd
+shr al,4
+neg ebx
+jmp [ebp]
+jmp [ebp]
+sar rsi,4
+inc bh
+xor [edx],ebx
+jmp [ebx]
+pause
+call [ebp]
+lahf
+cmpsw
+scasb
+cld
+
 test cx,86
 mov rdx,82
 lock
@@ -166,7 +215,6 @@ syscall
 hlt
 lock
 lodsw
-
 call [edi]
 ror bh,2
 scasb
