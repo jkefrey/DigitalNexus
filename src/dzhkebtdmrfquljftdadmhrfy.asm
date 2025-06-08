@@ -1,3 +1,54 @@
+ror cl,2
+imul bh
+jmp [edi]
+imul rcx
+dec al
+syscall
+neg ch
+inc ah
+and rbp,rbx
+neg rdi
+jmp [edi]
+shl dx,6
+syscall
+idiv esi
+lodsb
+cmp [esi],ebx
+sub [rdx],rdx
+jmp [ecx]
+test [ecx],ebp
+syscall
+call [ebx]
+add [eax],ebp
+add al,al
+rol ecx,8
+test bh,bh
+sar dh,1
+shl rdx,8
+jmp [ecx]
+scasb
+and bl,50
+shr bl,3
+scasb
+lahf
+rcl eax,3
+xor ebp,97
+jmp [edx]
+cwd
+scasw
+neg ecx
+jmp [esi]
+sar cl,4
+ror ah,8
+shl rax,5
+sar esi,6
+sal cx,4
+dec edx
+jmp [eax]
+cli
+nop
+rcr rsi,1
+
 scasb
 idiv bl
 mov [edi],ebp
