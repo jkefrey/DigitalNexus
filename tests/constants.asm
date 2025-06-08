@@ -1,3 +1,45 @@
+imul rsi
+pause
+adc eax,edi
+div ch
+xor ah,ah
+call [edi]
+rcr eax,5
+imul ch
+xor dl,dl
+rcr rdx,1
+imul edi
+mov [edx],ecx
+rol cx,7
+cmp cx,6
+shr edx,7
+mul rdx
+cli
+hlt
+and [ebp],ebp
+test [rax],rax
+pause
+mov bh,6
+jmp [eax]
+stc
+dec dl
+lahf
+scasb
+idiv ax
+shr cx,7
+rcr rdx,6
+cli
+clc
+kiCGRVm759323244943:
+inc ax
+scasw
+ret
+rcr rax,3
+scasb
+lock
+div dh
+call [eax]
+
 adc [rcx],rbx
 dec rbp
 neg cx
