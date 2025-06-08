@@ -1,3 +1,53 @@
+hlt
+cld
+add al,al
+test cl,80
+and edx,ebx
+ror bx,4
+rol ah,5
+dec cx
+clc
+syscall
+sar rdx,8
+nop
+call [edi]
+adc [ebx],eax
+mul dl
+ret
+nop
+or rsi,rbx
+jmp [ebx]
+sbb rcx,rax
+sti
+inc dl
+scasb
+sub [rcx],rsi
+ret
+sar ebp,3
+scasb
+sbb cx,70
+div ebx
+dec cl
+syscall
+cwd
+stc
+sbb dl,55
+cli
+mov edx,10
+sal rax,2
+lodsb
+and cx,cx
+test cx,74
+pause
+cli
+sti
+idiv eax
+shr dx,3
+clc
+cli
+neg rsi
+wait
+
 adc bl,52
 wait
 ror dl,5
@@ -33,7 +83,6 @@ cld
 add dh,47
 test ax,ax
 test [ebp],eax
-
 and al,97
 dec rbx
 rcl ax,3
