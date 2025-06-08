@@ -1,3 +1,30 @@
+and cl,20
+sal eax,5
+ret
+rcl rbx,7
+jmp [ecx]
+lock
+imul rsi
+rcl dx,7
+idiv bh
+std
+lodsb
+and cx,27
+lahf
+mul rcx
+dec cl
+call [eax]
+xor [edx],edi
+call [ebx]
+mul bx
+cli
+jmp [ecx]
+dec bh
+syscall
+lahf
+xor [edx],ebp
+shr rbp,4
+
 imul rsi
 pause
 adc eax,edi
