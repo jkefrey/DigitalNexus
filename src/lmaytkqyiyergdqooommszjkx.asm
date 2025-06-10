@@ -1,3 +1,30 @@
+rol bx,1
+ror ebp,4
+neg rcx
+ret
+jmp [edi]
+lock
+sar rcx,5
+ret
+sar dx,2
+sbb rsi,rcx
+cli
+sub bx,52
+sal esi,1
+cli
+or rax,70
+dec bh
+hlt
+div bx
+call [edi]
+clc
+cmp rdx,59
+imul ch
+adc [edx],edi
+hlt
+imul bl
+stc
+
 sbb rcx,rdx
 ret
 shr edi,2
