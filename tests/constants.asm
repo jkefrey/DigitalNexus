@@ -1,3 +1,44 @@
+sti
+cmp [edx],edx
+inc bx
+sub rdx,rdi
+add cx,cx
+jmp [edi]
+add cl,27
+test [rdx],rcx
+sar esi,5
+inc bl
+jmp [eax]
+adc dh,dh
+adc cl,2
+rcl ch,8
+std
+xor cl,cl
+mov [ecx],ecx
+pause
+inc dx
+std
+or bx,cx
+clc
+lodsw
+lahf
+shr esi,3
+mov cl,18
+cwd
+sal rbp,4
+ret
+ror rdx,5
+jmp [esi]
+test [ebx],edi
+imul bl
+rdtsc
+sub eax,35
+rcl al,7
+sar ecx,2
+cmp [ebx],ecx
+and ax,10
+nop
+
 and cl,20
 sal eax,5
 ret
@@ -357,7 +398,6 @@ test bx,ax
 cli
 hlt
 std
-
 inc ebp
 shr rbx,2
 lodsw
