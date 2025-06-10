@@ -1,3 +1,49 @@
+adc cx,cx
+mov [rcx],rdi
+pause
+ret
+and rsi,30
+imul esi
+jmp [esi]
+cmp dx,63
+call [edx]
+call [edx]
+Ca0GEib_73840596:
+jmp [edi]
+cmp ch,ch
+add bx,bx
+and edx,esi
+std
+rdtsc
+test bl,65
+jmp [esi]
+sar cl,4
+scasb
+rcr ax,8
+imul cl
+and bx,dx
+idiv rbx
+or bx,bx
+ret
+idiv dl
+rcl ebp,1
+scasb
+adc dl,2
+or [edx],edx
+nop
+cmp rax,rbx
+scasw
+lodsw
+adc rbp,rax
+scasw
+lock
+div ch
+neg ax
+cld
+or bl,36
+idiv esi
+wait
+
 ror cl,2
 imul bh
 jmp [edi]
