@@ -1,3 +1,48 @@
+inc dl
+sal rcx,2
+shr ebx,6
+adc ax,20
+mul dl
+ror rbp,8
+dec ebx
+lahf
+stc
+ret
+sbb dx,80
+lodsb
+lodsw
+rcl ah,6
+rol dh,7
+sal bx,8
+neg dx
+lodsw
+sbb bl,bl
+ret
+and [rbx],rdi
+cmpsw
+sal cl,2
+jmp [esi]
+hlt
+neg al
+rcl dx,1
+shl bl,1
+ret
+div cl
+lahf
+rol dx,1
+sti
+jmp [edx]
+sar rsi,5
+call [edi]
+sar bl,6
+and cx,cx
+cld
+xor [edi],eax
+std
+jmp [eax]
+jmp [edx]
+sub [rbx],rdi
+
 idiv cx
 jmp [edi]
 call [edi]
