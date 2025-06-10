@@ -1,3 +1,33 @@
+adc ebx,28
+cmpsw
+and [rdx],rax
+test [rsi],rsi
+dec al
+scasb
+and rdx,34
+div rbx
+jmp [ecx]
+sbb [edi],ebx
+sub ax,38
+xor ah,60
+scasw
+mul ecx
+nop
+xor ecx,eax
+scasw
+lahf
+xor edx,56
+sub ecx,70
+adc dx,dx
+sub bl,68
+rcl al,4
+jmp [ebx]
+sbb dx,15
+ret
+sbb [edi],ebx
+syscall
+rcl ebp,6
+
 inc al
 idiv dh
 sbb [rsi],rax
@@ -201,7 +231,6 @@ sar dx,1
 nop
 sar rdx,4
 call [edi]
-
 sbb rdi,rdx
 shl bl,7
 sar bh,6
