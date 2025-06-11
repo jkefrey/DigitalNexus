@@ -1,3 +1,47 @@
+sal rax,8
+cmp [esi],edi
+imul al
+shl rbx,3
+cmp cx,76
+lahf
+call [ebp]
+ret
+div rdx
+cmp [rbp],rax
+neg rbx
+adc dx,dx
+inc ebx
+inc cl
+shl dh,6
+and ch,ch
+inc rbx
+nop
+add bl,bl
+scasw
+sar ebx,2
+shl ah,6
+jmp [ebp]
+sti
+imul eax
+.iiZ999662305:
+jmp [esi]
+nop
+lahf
+add bx,bx
+cwd
+idiv rdx
+gWhZ343048674:
+adc rax,50
+shr rdi,3
+dec rax
+inc esi
+add eax,88
+idiv edi
+std
+lodsb
+rol bl,2
+hlt
+
 rcr rsi,5
 RJ1htFXQj476482117:
 ror ebp,5
@@ -111,7 +155,6 @@ pause
 rol edx,2
 cmp [edx],edi
 jmp [edi]
-
 mov dh,56
 shl ah,3
 rcl bh,2
