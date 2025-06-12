@@ -1,3 +1,39 @@
+test [ebx],esi
+inc bh
+sbb ebx,ecx
+sar ax,1
+call [edi]
+rcl rsi,4
+cld
+mov [ebp],ebp
+and [rdx],rdx
+jmp [esi]
+xor [esi],edi
+lock
+lodsw
+cli
+cli
+lock
+sar ecx,5
+idiv bh
+cli
+shl rbx,2
+cli
+ret
+sal ecx,7
+and edi,edi
+lahf
+neg edi
+dec ebx
+xor [rbx],rcx
+scasb
+stc
+test [edi],eax
+sub [rdx],rsi
+wait
+div ebp
+neg rdx
+
 inc dl
 sal rcx,2
 shr ebx,6
