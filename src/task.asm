@@ -1,3 +1,42 @@
+sal rcx,2
+jmp [edi]
+lodsb
+rcl cx,6
+pause
+call [ecx]
+dec esi
+imul ecx
+sar dl,6
+neg ebp
+sal rsi,4
+shr edx,3
+ret
+call [eax]
+cmp [ebx],ecx
+mov [esi],edx
+mov bh,bh
+cmpsw
+rol rsi,3
+std
+cli
+sar esi,1
+mul bx
+ret
+lodsb
+cmpsw
+sbb bh,79
+adc ah,56
+div rcx
+test bx,51
+scasb
+cli
+ror ecx,2
+dec ebp
+lock
+cmp [edi],eax
+jmp [ebx]
+imul bh
+
 ror eax,1
 scasb
 lodsb
