@@ -1,3 +1,38 @@
+shr rax,4
+rcl eax,8
+shr ebp,3
+sti
+pause
+div eax
+rol ebp,5
+scasb
+rdtsc
+hlt
+add al,81
+call [esi]
+sar cl,4
+rcr al,3
+sar eax,6
+shl dh,4
+imul dl
+ret
+shl ebp,4
+cld
+adc cl,11
+cli
+scasw
+cmpsw
+hlt
+call [ebp]
+sub ebx,ebx
+rcr rax,3
+scasw
+ret
+xor dx,39
+rcl dh,1
+ror rcx,3
+stc
+
 rol bx,1
 ror ebp,4
 neg rcx
@@ -253,7 +288,6 @@ mul ecx
 sal edi,7
 dec edx
 lock
-
 sub ah,14
 div ecx
 xor ch,93
