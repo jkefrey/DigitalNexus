@@ -1,3 +1,50 @@
+ror cl,2
+call [ecx]
+dec ax
+rcr rbp,6
+std
+call [esi]
+add [rax],rsi
+mov bl,bl
+imul ax
+sti
+ror bx,5
+lodsw
+scasb
+test rax,rax
+mov ecx,edx
+sal ebx,8
+test [rdi],rcx
+jmp [edi]
+div rdx
+inc eax
+cmp dx,dx
+xor cx,90
+test rbp,rcx
+sal al,2
+rol esi,4
+rcl edx,1
+test [esi],edi
+rcr ebp,6
+std
+inc ebx
+lahf
+nop
+mul rbx
+sub cl,cl
+and rcx,35
+or ah,ah
+div ax
+mov cl,bl
+jmp [ecx]
+xor ah,72
+hlt
+stc
+lodsb
+rcl rax,4
+hlt
+sub [ebp],ebx
+
 sal rax,8
 cmp [esi],edi
 imul al
