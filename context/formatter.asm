@@ -1,3 +1,43 @@
+sal dx,7
+sal eax,1
+inc rdi
+cwd
+jmp [esi]
+clc
+std
+adc [ebp],ebp
+xor ch,18
+lodsw
+pause
+ror rbx,4
+jmp [esi]
+cld
+rdtsc
+ret
+mov [ecx],eax
+or [rcx],rbp
+mov [rax],rsi
+dec dx
+scasw
+sti
+shr cl,7
+adc ebx,36
+ret
+lodsw
+cmp ah,10
+stc
+call [ecx]
+mul rsi
+hlt
+div rax
+wait
+cmpsw
+call [edx]
+shr edi,4
+xor cx,99
+sar ax,7
+rdtsc
+
 cli
 sub [rbx],rax
 imul dh
@@ -305,7 +345,6 @@ rol bl,8
 and bh,bh
 and dx,cx
 dec ecx
-
 cli
 clc
 div eax
@@ -460,7 +499,6 @@ call [esi]
 sub ax,ax
 call [eax]
 shr ecx,5
-
 ror al,8
 jmp [esi]
 test ebx,93
