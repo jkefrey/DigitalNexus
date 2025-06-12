@@ -1,3 +1,52 @@
+adc rax,rcx
+rcl rsi,2
+sbb ah,5
+imul rbp
+mov ebp,70
+sar cx,7
+scasw
+mul rbx
+hlt
+sar edi,4
+sbb cx,cx
+call [ebx]
+call [esi]
+xor rbp,rcx
+rcr rax,3
+scasb
+shl bl,5
+adc rcx,20
+sub rdx,rdx
+idiv eax
+call [eax]
+mul esi
+stc
+lodsb
+jmp [ebx]
+neg ebp
+clc
+pause
+imul ch
+clc
+jmp [esi]
+syscall
+inc ebx
+call [esi]
+call [eax]
+add dh,dh
+add [rdi],rdx
+jmp [ecx]
+sti
+wait
+jmp [esi]
+call [eax]
+imul dh
+scasb
+neg bh
+shr rax,5
+jmp [esi]
+sti
+
 adc cx,cx
 mov [rcx],rdi
 pause
