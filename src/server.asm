@@ -1,3 +1,32 @@
+jmp [ebp]
+stc
+inc bh
+sar edx,7
+nop
+syscall
+shr bx,5
+.NP4ezeS482042777:
+scasb
+rol dx,1
+add rbx,5
+cmpsw
+inc al
+wait
+neg rdi
+sar rdi,6
+wait
+rcl cl,5
+inc edi
+syscall
+sar dh,2
+mov dh,dh
+div rdi
+call [eax]
+clc
+jmp [ebx]
+stc
+shr rcx,1
+
 hlt
 cld
 add al,al
