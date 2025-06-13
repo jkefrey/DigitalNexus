@@ -1,3 +1,52 @@
+sal bh,8
+xor [rdx],rbx
+shl ebp,8
+xor bl,22
+rcr dl,4
+mov [rdx],rbp
+idiv dx
+syscall
+xor ch,ch
+call [edi]
+scasw
+call [eax]
+imul al
+call [eax]
+nop
+and ch,39
+sar bh,2
+inc rbp
+sbb [rbp],rcx
+sar dx,7
+mul bx
+jmp [ecx]
+scasw
+sal dh,2
+ror dl,7
+clc
+dec ebp
+cmpsw
+cmp bl,97
+shl esi,2
+shl bx,4
+shr rdi,6
+TOwWkknFFk293191418:
+neg dx
+mul bh
+nop
+wait
+.cE3ukfT4I435430000:
+wait
+sub [ecx],eax
+dec cx
+sal rsi,1
+neg edi
+std
+shl esi,3
+and ah,3
+rcr ax,5
+div rdx
+
 adc ebx,28
 cmpsw
 and [rdx],rax
