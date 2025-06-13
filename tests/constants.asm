@@ -1,3 +1,30 @@
+test [rdx],rax
+adc bx,2
+inc al
+ret
+mul edx
+test eax,54
+ret
+test [rcx],rax
+dec cl
+lahf
+neg rdi
+std
+call [ebx]
+rcl dx,3
+sbb ecx,ebx
+div dl
+ret
+xor [rdx],rdx
+mov [esi],ebx
+cmp ax,45
+sar ebp,8
+call [ebx]
+stc
+shr ebp,4
+div rcx
+ror dl,2
+
 sti
 cmp [edx],edx
 inc bx
@@ -220,7 +247,6 @@ add bl,bl
 add dh,dh
 or ebp,ebx
 rcl rbx,4
-
 xor [rdi],rcx
 sbb dx,dx
 mul bl
@@ -249,7 +275,6 @@ std
 imul cl
 dec ch
 cli
-
 ret
 ret
 call [edx]
