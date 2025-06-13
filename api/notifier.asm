@@ -1,3 +1,53 @@
+rol rcx,5
+xor [rdi],rbx
+mul rcx
+and ax,ax
+mul bl
+rcl rbp,7
+S1272273756:
+sti
+jmp [edi]
+cmpsw
+and [edx],eax
+nop
+cwd
+cmp [edx],esi
+sal edx,2
+sub bl,bl
+idiv rbx
+cmp ax,82
+jmp [ebp]
+shl ecx,3
+inc bh
+ror ch,7
+call [eax]
+jmp [ebp]
+lodsb
+cli
+std
+dec rdi
+ret
+clc
+neg rsi
+shl edi,4
+test ah,37
+jmp [edi]
+or [esi],esi
+cmpsw
+dec dl
+xor rsi,rdx
+div esi
+adc al,63
+rcr rbx,5
+sub bh,bh
+adc rbp,86
+std
+mov esi,59
+scasw
+and ax,bx
+shr rbp,6
+.IXWaW199040918:
+
 cwd
 sar ah,6
 call [edi]
