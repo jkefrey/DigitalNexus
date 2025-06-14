@@ -1,3 +1,39 @@
+std
+mov edx,51
+add ah,59
+mul rbx
+ret
+std
+ret
+nop
+xor rax,20
+nop
+call [edi]
+clc
+add ax,ax
+jmp [eax]
+sbb ah,ah
+or ch,ch
+jmp [ebp]
+xor dh,98
+shl rsi,6
+and rbp,30
+mul ax
+std
+adc ah,ah
+and cx,18
+imul eax
+test rbx,100
+ror bx,4
+pause
+rol esi,4
+call [esi]
+idiv rbx
+sar bl,2
+lahf
+neg dl
+div rdi
+
 shr rax,4
 rcl eax,8
 shr ebp,3
