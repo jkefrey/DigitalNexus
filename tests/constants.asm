@@ -1,3 +1,41 @@
+or bh,bh
+shr edi,4
+or [rsi],rdi
+pause
+and ch,ah
+call [edx]
+shl ebx,4
+call [ebp]
+rol dx,2
+cwd
+rcl dl,4
+and dl,32
+idiv ebx
+sar dx,2
+jmp [eax]
+ror rbx,8
+idiv bx
+rcl bx,3
+wait
+lock
+std
+lodsb
+or [ebx],ecx
+dec edx
+.E0sBdWV758436779:
+idiv cl
+rol al,6
+cmp edx,ebp
+rcl ecx,8
+test [eax],ecx
+sal cx,7
+call [eax]
+jmp [eax]
+adc dh,dh
+wait
+cld
+rcl rdx,1
+
 test [rdx],rax
 adc bx,2
 inc al
@@ -311,7 +349,6 @@ adc cl,cl
 inc rdx
 shr ecx,8
 call [eax]
-
 scasw
 shr cl,3
 cwd
