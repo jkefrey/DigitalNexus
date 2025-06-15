@@ -1,3 +1,30 @@
+lock
+std
+sub dl,cl
+jmp [ecx]
+wait
+cld
+ret
+jmp [ebx]
+mov bl,83
+neg ah
+stc
+sbb ebp,edi
+and dx,dx
+cmp dh,54
+sti
+sub bl,3
+imul ax
+cmpsw
+sti
+.ePxkmE780087119:
+sub dh,4
+sti
+sub rax,22
+ret
+neg rdx
+syscall
+
 std
 mov edx,51
 add ah,59
@@ -296,7 +323,6 @@ adc [rbx],rcx
 mul rdi
 lock
 jmp [edx]
-
 inc bl
 cwd
 neg ebp
