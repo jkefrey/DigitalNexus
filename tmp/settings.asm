@@ -1,3 +1,35 @@
+ret
+cmp [ebx],edi
+imul ax
+and ch,ch
+adc bl,2
+ret
+rcl cl,5
+cmpsw
+shl bh,1
+shr rbx,5
+jmp [edx]
+shl rdi,7
+rdtsc
+imul cx
+stc
+rcl edi,1
+neg rax
+rcr ch,7
+mov ax,43
+scasw
+rol dx,7
+jmp [edx]
+rol rsi,1
+cmp [esi],edx
+rdtsc
+ret
+imul cx
+scasb
+imul dl
+jmp [esi]
+std
+
 test [ebx],esi
 inc bh
 sbb ebx,ecx
@@ -78,7 +110,6 @@ std
 jmp [eax]
 jmp [edx]
 sub [rbx],rdi
-
 idiv cx
 jmp [edi]
 call [edi]
