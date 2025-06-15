@@ -1,3 +1,32 @@
+rcr rsi,2
+xor rbx,rdi
+call [edx]
+idiv ah
+ret
+std
+adc edx,ebp
+dec cx
+sal ch,3
+div edx
+xor [ecx],esi
+lodsw
+lodsb
+div rdx
+shl dl,6
+shr cx,7
+std
+ret
+imul rbp
+or dh,43
+rdtsc
+xor [rdi],rdi
+rol ah,2
+add rcx,rsi
+ror cx,4
+div al
+call [ecx]
+mul ebp
+
 sal rcx,2
 jmp [edi]
 lodsb
