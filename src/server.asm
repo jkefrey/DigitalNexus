@@ -1,3 +1,35 @@
+cwd
+dec rbx
+lodsb
+mh1b4U9u548697418:
+sbb dh,ch
+lodsb
+add rdx,rdx
+sal rbx,6
+pause
+add dx,dx
+std
+imul al
+pause
+syscall
+cmp bl,75
+adc edx,29
+lock
+sal ecx,7
+or cl,92
+sub cl,cl
+rcr eax,8
+cwd
+ret
+call [edx]
+mul ecx
+call [edx]
+rcr ecx,7
+sal rbp,5
+std
+mov dx,48
+lahf
+
 jmp [ebp]
 stc
 inc bh
