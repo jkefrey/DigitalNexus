@@ -1,3 +1,41 @@
+xor [rdi],rdi
+nop
+cmpsw
+sti
+imul cl
+or [rax],rax
+sbb [rbp],rax
+sar bh,8
+sal bh,3
+shl ah,5
+stc
+sbb cx,52
+div dh
+mov [ebp],ebx
+lock
+ror edx,2
+jmp [esi]
+mov cl,cl
+nGAO0sX179021762:
+call [ebp]
+neg edx
+rcr bl,4
+lodsb
+add rsi,35
+cwd
+vGSLO3U726338202:
+stc
+ror dx,7
+lahf
+mov [rdi],rbp
+lodsw
+sar ch,4
+sti
+test cx,cx
+std
+ret
+lock
+
 rol cl,5
 inc al
 sar esi,5
