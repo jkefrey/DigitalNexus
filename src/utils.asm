@@ -1,3 +1,35 @@
+lock
+sbb [rcx],rcx
+idiv esi
+lahf
+cwd
+dec ebp
+adc dl,88
+stc
+jmp [ebp]
+jmp [esi]
+xor [esi],ebx
+rol esi,2
+sti
+lahf
+lodsb
+rol edi,7
+rol al,3
+jmp [eax]
+sub rcx,rsi
+test dh,bh
+clc
+cmp [edi],esi
+imul edi
+std
+inc cx
+jmp [esi]
+neg edi
+cwd
+lahf
+uGx94923592:
+wait
+
 ret
 mul ah
 cld
@@ -77,7 +109,6 @@ adc dh,ch
 add ax,ax
 sar bh,5
 add ax,cx
-
 adc al,al
 nop
 dec edi
