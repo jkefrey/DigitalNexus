@@ -1,3 +1,37 @@
+sar ah,5
+ksa_SCVn145092434:
+mul al
+sti
+cmp [rdx],rsi
+add dh,dh
+shr ecx,7
+shl eax,3
+wait
+neg rsi
+ret
+cmp ax,ax
+cld
+jmp [eax]
+syscall
+rol ah,8
+ror rax,4
+rol edi,1
+ret
+and ebx,esi
+idiv dl
+ror ch,1
+syscall
+sal ah,4
+idiv rdx
+shl cl,1
+lodsb
+sal eax,3
+ror ch,3
+call [edi]
+rol ecx,7
+cmpsw
+test dh,dh
+
 lock
 std
 sub dl,cl
