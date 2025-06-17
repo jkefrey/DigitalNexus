@@ -1,3 +1,41 @@
+cwd
+shl rdx,7
+rcl ebp,1
+ret
+ret
+imul bh
+add al,77
+sti
+shl rax,2
+rcl bx,8
+call [esi]
+lahf
+or al,al
+lock
+rcl ah,8
+inc rbx
+cld
+div ax
+lodsw
+rcr dh,4
+lahf
+mov rdx,rax
+hlt
+ror al,3
+hlt
+pause
+lodsb
+dec rsi
+call [edi]
+lodsb
+rol eax,8
+hlt
+cmpsw
+rol rax,1
+lahf
+cmp [edi],ebx
+ret
+
 rol rcx,5
 xor [rdi],rbx
 mul rcx
