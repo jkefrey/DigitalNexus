@@ -1,3 +1,37 @@
+ret
+call [eax]
+std
+sub dl,dl
+wait
+scasw
+xor dl,98
+ror ebp,2
+inc dl
+mov ch,36
+shl dl,4
+call [ebp]
+imul eax
+cwd
+call [ecx]
+jmp [ebx]
+jmp [ebx]
+ret
+lock
+rcr ebx,4
+G458906259:
+zwb589748358:
+rol cx,7
+cmpsw
+pause
+sar rbp,7
+cmpsw
+rol ah,3
+xor ecx,eax
+sal cx,4
+mov [rsi],rsi
+clc
+jmp [esi]
+
 adc rax,rcx
 rcl rsi,2
 sbb ah,5
