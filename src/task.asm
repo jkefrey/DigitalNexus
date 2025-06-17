@@ -1,3 +1,44 @@
+std
+jmp [esi]
+shr dl,5
+call [edi]
+lahf
+add dl,27
+lahf
+lodsw
+rol rdx,5
+ret
+cmp ax,dx
+ret
+adc eax,edi
+stc
+add cx,dx
+adc al,al
+syscall
+rcl esi,4
+lahf
+nop
+mov edx,esi
+shl cl,6
+div eax
+rol dl,6
+ret
+neg edx
+ret
+clc
+add cl,cl
+inc ax
+dec rdi
+rdtsc
+cmp cl,cl
+and [rdi],rbx
+sal dl,5
+stc
+rol cl,5
+sar ecx,7
+sub [rbp],rsi
+jmp [ecx]
+
 rcr rsi,2
 xor rbx,rdi
 call [edx]
@@ -65,7 +106,6 @@ lock
 cmp [edi],eax
 jmp [ebx]
 imul bh
-
 ror eax,1
 scasb
 lodsb
