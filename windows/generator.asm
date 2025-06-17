@@ -1,3 +1,37 @@
+rcr ax,3
+clc
+dec bl
+jmp [edx]
+std
+inc rsi
+ror ch,7
+scasb
+test edi,ecx
+cmpsw
+cmp dl,84
+scasw
+rcl bx,8
+rcr bx,4
+rol cx,8
+test cl,bl
+imul esi
+mov dl,dl
+adc [rbp],rcx
+call [edx]
+inc cl
+imul cx
+cli
+rcl cx,7
+ror rbp,3
+lahf
+lahf
+mul dl
+call [eax]
+and edi,68
+rdtsc
+sal ax,2
+ret
+
 sal bh,8
 xor [rdx],rbx
 shl ebp,8
@@ -76,7 +110,6 @@ ret
 sbb [edi],ebx
 syscall
 rcl ebp,6
-
 inc al
 idiv dh
 sbb [rsi],rax
