@@ -1,3 +1,48 @@
+call [eax]
+rol bx,1
+rcr ebp,7
+mov bh,bh
+jmp [ecx]
+lahf
+dec rdi
+sar cx,2
+mov [edx],edx
+lock
+ret
+test ah,62
+scasw
+cld
+call [ebx]
+rcr ebx,2
+idiv al
+cmpsw
+shr rbp,6
+scasb
+neg dh
+neg cx
+jmp [ebx]
+idiv edx
+lock
+cld
+hlt
+cld
+cli
+dec ax
+lahf
+or [rbp],rcx
+sub [eax],ebx
+imul rcx
+scasw
+shr ebp,3
+lock
+jmp [eax]
+sal rcx,5
+sal rbp,3
+ror dx,7
+clc
+add bh,bh
+lodsb
+
 or bh,bh
 shr edi,4
 or [rsi],rdi
