@@ -1,3 +1,36 @@
+call [ebx]
+sal bx,3
+sbb edi,edx
+sbb dh,96
+rcl cl,4
+sub dl,cl
+add [ecx],ecx
+nop
+cld
+ret
+dec ah
+adc [rsi],rcx
+shl ebx,4
+cwd
+dec dl
+clc
+sal ch,5
+and rsi,68
+jmp [ebp]
+rdtsc
+inc dl
+syscall
+neg bl
+and [rdi],rdx
+cmpsw
+neg edi
+inc dx
+rcl dh,7
+rdtsc
+wait
+scasb
+mov [esi],ebx
+
 ret
 cmp [ebx],edi
 imul ax
@@ -152,7 +185,6 @@ inc esi
 cmp [ebp],ebx
 inc bl
 mul rbx
-
 jmp [edx]
 rcr bh,1
 rdtsc
@@ -266,7 +298,6 @@ mov ax,dx
 rol ch,1
 ror rbp,2
 jmp [ebx]
-
 jmp [ebp]
 syscall
 rcr cx,8
@@ -405,7 +436,6 @@ lock
 imul rax
 sal bl,4
 xor dl,dl
-
 xor ah,ah
 jmp [esi]
 mov dx,dx
