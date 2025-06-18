@@ -1,3 +1,47 @@
+or esi,ebp
+sbb ah,57
+shl rbx,5
+jmp [ecx]
+lock
+cmp cl,72
+lahf
+sti
+jmp [ebx]
+call [ebp]
+idiv rcx
+syscall
+adc [eax],ecx
+sar cl,4
+pause
+inc al
+neg ah
+wait
+test cx,cx
+call [eax]
+add cl,34
+rcl dl,4
+sar rbx,4
+call [eax]
+std
+jmp [ebx]
+adc [edi],edx
+cmp rcx,72
+neg rbp
+jmp [edi]
+sal al,4
+shl eax,5
+idiv edx
+idiv dl
+cld
+ret
+idiv rdi
+lahf
+imul bl
+call [edx]
+scasw
+scasb
+scasb
+
 xor [rdi],rdi
 nop
 cmpsw
@@ -83,7 +127,6 @@ or [ebx],ecx
 add ebp,22
 scasb
 ret
-
 mul bl
 sbb bh,81
 syscall
@@ -132,7 +175,6 @@ ror dx,7
 mov edx,92
 xor ah,ah
 ror edi,5
-
 mov dx,dx
 .ryE8Ye2Mb37459123:
 lodsb
