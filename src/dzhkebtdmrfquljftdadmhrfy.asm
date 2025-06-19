@@ -1,3 +1,42 @@
+test [edi],ebp
+hlt
+rcr ecx,4
+scasb
+cld
+sal eax,4
+ret
+div ebp
+and cl,68
+xor rbp,rbp
+inc rbp
+sbb cx,dx
+shl ch,5
+add ecx,64
+ret
+mul edx
+cld
+or dx,cx
+ror rbx,4
+shr esi,7
+stc
+cmp rbx,26
+pause
+neg bx
+call [ecx]
+cmpsw
+scasw
+sbb edx,93
+clc
+inc rsi
+idiv ecx
+rol cl,2
+wait
+xSxr183051891:
+rcl ebp,3
+jmp [edx]
+cmpsw
+and cx,78
+
 ret
 call [eax]
 std
