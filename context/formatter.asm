@@ -1,3 +1,46 @@
+idiv eax
+rol rcx,4
+shr rbx,2
+sal ah,5
+dec rbx
+jmp [ecx]
+or [rdi],rdi
+imul al
+ror cl,1
+sti
+mul al
+scasb
+std
+xor rax,rcx
+lodsw
+call [esi]
+lock
+cmpsw
+scasw
+adc rbx,96
+neg bx
+lahf
+or dh,82
+jmp [edx]
+mov [rsi],rbx
+call [ebp]
+sti
+mul dl
+neg ebx
+xor ah,ah
+wait
+cmp [eax],ecx
+lock
+pause
+call [eax]
+or [esi],ebx
+and al,al
+ror cx,5
+syscall
+or ch,97
+cld
+ret
+
 sar ebx,2
 jmp [esi]
 scasw
@@ -184,7 +227,6 @@ shl al,3
 add ecx,esi
 scasw
 cmp edi,41
-
 syscall
 sar rdi,5
 lock
