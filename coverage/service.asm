@@ -1,3 +1,54 @@
+lodsb
+shr rsi,2
+call [ebx]
+call [ebx]
+ror ah,3
+rcl dx,3
+sar bl,5
+adc [rcx],rax
+mul bl
+ret
+ORTNhjWtb77425714:
+ret
+jmp [eax]
+adc cx,44
+or [rbp],rbx
+adc dh,dh
+jmp [edx]
+sar rbx,6
+sar esi,2
+or ax,51
+jmp [eax]
+wait
+sal edx,2
+xor ax,64
+rol al,1
+wait
+idiv edi
+rcr dl,4
+div rdi
+jmp [esi]
+call [edx]
+neg cl
+hlt
+call [esi]
+div rax
+jmp [eax]
+lodsb
+call [edx]
+dec cl
+cli
+rcl dl,2
+rcl ah,1
+rcl bx,2
+sal rsi,8
+cwd
+adc rsi,67
+pause
+shr eax,1
+ret
+scasb
+
 wait
 mov dx,41
 cwd
