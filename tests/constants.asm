@@ -1,3 +1,54 @@
+idiv rbx
+stc
+shr esi,3
+wait
+shl al,8
+ret
+sbb bh,5
+jmp [edx]
+cmp [ecx],ecx
+rcl al,2
+ret
+shl cx,8
+sub dx,dx
+mul rbp
+dec bl
+imul ebx
+call [ebp]
+stc
+neg cl
+scasw
+ret
+sti
+shr cx,8
+.LL4193787116:
+rdtsc
+rcl eax,1
+imul bl
+ror rbp,5
+cmp bl,bl
+call [edx]
+wait
+pause
+syscall
+.n3SV83PuhH282116124:
+scasb
+stc
+ret
+rdtsc
+rdtsc
+scasw
+neg dh
+jmp [edx]
+nop
+neg rsi
+rcl esi,4
+xor rsi,rax
+ret
+cmp ax,ax
+xor rdx,4
+stc
+
 call [eax]
 rol bx,1
 rcr ebp,7
