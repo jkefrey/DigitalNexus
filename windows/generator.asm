@@ -1,3 +1,29 @@
+rdtsc
+add dh,dh
+and [esi],edi
+call [edi]
+neg rdi
+rcl rbp,3
+rcl rbx,6
+lahf
+wait
+scasb
+rol ebp,5
+sub ax,ax
+X179438891:
+scasb
+mov [rdx],rbp
+jmp [esi]
+and ax,ax
+mov dl,47
+dec al
+jmp [esi]
+neg ax
+add rsi,rsi
+sti
+xor rdx,94
+mul rcx
+
 rcr ax,3
 clc
 dec bl
@@ -80,7 +106,6 @@ shl esi,3
 and ah,3
 rcr ax,5
 div rdx
-
 adc ebx,28
 cmpsw
 and [rdx],rax
