@@ -1,3 +1,41 @@
+ret
+test dh,bh
+shr rdi,7
+scasw
+lodsb
+imul dx
+rdtsc
+idiv bh
+cli
+idiv bx
+ror al,4
+ret
+ret
+or bh,bh
+sbb [rdi],rbp
+and [rdi],rax
+pause
+VTT8lHF219815675:
+pause
+std
+sub bx,62
+test [eax],eax
+or cx,16
+lahf
+imul dx
+lahf
+sar ebp,4
+xor ah,ah
+lodsw
+wait
+std
+cmpsw
+call [edi]
+scasw
+std
+jmp [ebx]
+mov cl,80
+
 sar ah,5
 ksa_SCVn145092434:
 mul al
@@ -246,7 +284,6 @@ clc
 shr al,4
 cli
 ret
-
 inc ax
 adc esi,eax
 xor ah,11
