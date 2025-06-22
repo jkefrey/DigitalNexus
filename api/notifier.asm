@@ -1,3 +1,32 @@
+jmp [ecx]
+cli
+jmp [edi]
+jmp [ecx]
+adc [edi],edx
+ret
+scasw
+ret
+cwd
+wait
+lodsw
+jmp [esi]
+lodsb
+cmp [edx],edi
+and ax,ax
+mul ch
+sal ebx,4
+ret
+call [eax]
+cld
+sti
+imul ah
+neg eax
+mov [ebx],ebp
+mul eax
+k5396342491:
+or dx,74
+sub rdx,rax
+
 cwd
 shl rdx,7
 rcl ebp,1
@@ -170,7 +199,6 @@ call [esi]
 dec rdi
 ret
 rdtsc
-
 test [rsi],rax
 ret
 rcl ch,6
