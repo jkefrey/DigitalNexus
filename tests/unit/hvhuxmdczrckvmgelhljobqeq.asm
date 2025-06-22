@@ -1,3 +1,47 @@
+scasw
+sal ah,3
+clc
+mul al
+sti
+stc
+div dl
+sub [eax],edx
+sub [rax],rsi
+jmp [ecx]
+cmp ax,ax
+div bx
+xor [rax],rbp
+idiv ebp
+dec rdi
+sbb [eax],esi
+call [ebx]
+shr al,4
+shr ecx,4
+lodsb
+idiv bh
+scasb
+xor ebp,edi
+mul esi
+cli
+adc bh,bh
+sub bh,48
+and [ecx],ecx
+rcr edi,2
+IrpfLN947654956:
+sal rax,2
+and [rsi],rdx
+and rdx,80
+stc
+jmp [ecx]
+call [edi]
+call [edi]
+ror bx,6
+inc dh
+neg rdx
+jmp [edx]
+dec ebx
+sti
+
 add rbx,51
 lodsb
 test [rsi],rbx
