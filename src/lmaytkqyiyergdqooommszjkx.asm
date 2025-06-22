@@ -1,3 +1,48 @@
+rcr rsi,7
+call [ebp]
+dec ax
+rcr dx,6
+lodsw
+adc ch,22
+rcr esi,7
+div ah
+call [edi]
+stc
+mul rdi
+cmp bx,bx
+lock
+lodsw
+sti
+inc bh
+jmp [esi]
+lock
+call [edx]
+idiv ebp
+jmp [ecx]
+sub dx,72
+sub bh,43
+cwd
+rdtsc
+shl eax,1
+mov dl,4
+std
+and al,al
+sal rbx,7
+sbb rdi,6
+rcr rbx,6
+xor ch,28
+lodsb
+ror ecx,3
+scasw
+jmp [ebp]
+jmp [ebx]
+test dl,dl
+shr cx,6
+jmp [ebp]
+cli
+adc cx,33
+sar cx,5
+
 ret
 test dh,bh
 shr rdi,7
@@ -69,7 +114,6 @@ call [edi]
 rol ecx,7
 cmpsw
 test dh,dh
-
 lock
 std
 sub dl,cl
