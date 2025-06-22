@@ -1,3 +1,52 @@
+rcr rsi,5
+wait
+cld
+jmp [ebx]
+or ebp,30
+lock
+shr bl,3
+scasb
+rcr dl,3
+rcr dl,2
+scasw
+lahf
+or bl,57
+jmp [esi]
+sub bh,35
+call [esi]
+syscall
+shl ah,1
+test [ebx],ecx
+jmp [ebp]
+syscall
+rcr ax,8
+cli
+and ch,86
+imul edx
+ret
+add dl,dl
+or cx,dx
+or rdi,35
+jmp [eax]
+shr rbx,5
+std
+and rdx,20
+ret
+and dh,18
+ret
+lock
+sal ah,6
+add [ebx],eax
+call [ebp]
+sal rbx,8
+scasw
+cwd
+add ax,42
+ret
+neg rbp
+hlt
+mul bx
+
 or esi,ebp
 sbb ah,57
 shl rbx,5
