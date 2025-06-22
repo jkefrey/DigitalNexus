@@ -1,3 +1,45 @@
+rcr ax,7
+rol cl,5
+call [edi]
+lahf
+shr rbp,2
+ret
+call [ebp]
+sal rbp,5
+adc [rdx],rsi
+shr ebp,4
+lahf
+neg bh
+scasw
+call [ebx]
+call [edx]
+div rsi
+mul edi
+wait
+stc
+sbb [rcx],rcx
+sbb [ebx],eax
+jmp [edx]
+sti
+rol dh,2
+lock
+rcr rcx,2
+add cl,cl
+call [edx]
+sal cx,3
+jmp [esi]
+jmp [eax]
+add ah,ch
+sub dl,dl
+mul rdi
+or [rcx],rbx
+cld
+shl edx,3
+shr bx,3
+sar esi,7
+.kGwgM_mjKg198531775:
+add al,al
+
 test [edi],ebp
 hlt
 rcr ecx,4
@@ -165,7 +207,6 @@ cld
 or bl,36
 idiv esi
 wait
-
 ror cl,2
 imul bh
 jmp [edi]
