@@ -1,3 +1,52 @@
+add rbx,51
+lodsb
+test [rsi],rbx
+scasw
+call [eax]
+cwd
+cmp dx,63
+lock
+lahf
+clc
+sub bl,bl
+scasb
+shr edi,6
+div dh
+sar rax,8
+div eax
+xor [rbp],rcx
+shr bl,7
+div ebx
+call [eax]
+test dl,11
+cmp [rsi],rax
+rcr dh,3
+call [ebp]
+call [eax]
+sbb [rcx],rsi
+mul ah
+cwd
+sbb dx,17
+jmp [ecx]
+sar cl,4
+ret
+inc rbp
+ror dx,4
+pause
+inc bh
+shl rcx,6
+call [esi]
+rcl rdi,3
+nop
+ror ecx,8
+mov bl,bl
+sar al,8
+test ax,42
+lock
+neg ah
+add rax,15
+jmp [edx]
+
 scasw
 sub ebp,ebp
 hlt
