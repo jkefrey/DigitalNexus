@@ -1,3 +1,36 @@
+std
+adc [rcx],rax
+call [ebx]
+jmp [ecx]
+scasw
+std
+cli
+hlt
+call [ebx]
+add dx,69
+cli
+dec bl
+or ax,dx
+div dh
+shr bx,8
+ror bx,5
+cmp [rbx],rax
+rcl rbx,6
+.le685193319:
+mul dl
+cld
+ror bl,8
+.ak305918412:
+dec ebx
+rcl rdx,4
+call [ebp]
+cmpsw
+xor [edx],edi
+scasb
+imul esi
+lodsw
+add bx,bx
+
 ror cl,2
 call [ecx]
 dec ax
@@ -88,7 +121,6 @@ std
 lodsb
 rol bl,2
 hlt
-
 rcr rsi,5
 RJ1htFXQj476482117:
 ror ebp,5
