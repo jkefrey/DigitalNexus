@@ -1,3 +1,35 @@
+std
+inc al
+lock
+div rdx
+imul ecx
+add cx,64
+rdtsc
+lock
+sbb bl,bl
+sbb dl,dl
+lahf
+lock
+nop
+cmp al,bl
+rcr bl,6
+hlt
+jmp [eax]
+add dl,dl
+lodsw
+lock
+mov eax,ebx
+sbb esi,52
+pause
+jmp [eax]
+adc bh,bh
+lodsb
+wait
+sar rdi,8
+.aP168870886:
+add rcx,rdx
+idiv bh
+
 rdtsc
 add dh,dh
 and [esi],edi
@@ -244,7 +276,6 @@ xor bh,ch
 call [ebx]
 idiv ebx
 cmpsw
-
 call [esi]
 call [ebp]
 nop
