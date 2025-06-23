@@ -1,3 +1,43 @@
+ret
+cli
+test dx,dx
+.h334258424:
+or dh,43
+cli
+jmp [esi]
+cld
+jmp [esi]
+neg cx
+test cx,cx
+and ch,25
+test dx,29
+neg edi
+.Utxz4bRk719710657:
+sti
+neg al
+neg esi
+call [ecx]
+jmp [ebp]
+sti
+sbb [rcx],rbx
+jmp [esi]
+mov esi,ebx
+cld
+sbb [ebx],edx
+and ebp,100
+and dx,75
+clc
+cwd
+xor [edi],esi
+mul ch
+call [ebx]
+shr ecx,6
+ror rbp,6
+jmp [eax]
+sti
+shr cx,3
+lodsw
+
 std
 adc [rcx],rax
 call [ebx]
