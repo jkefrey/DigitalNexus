@@ -1,3 +1,52 @@
+wait
+mov [rbp],rsi
+ror esi,3
+stc
+sar edi,5
+or [rax],rbx
+shl dl,4
+rdtsc
+wait
+div bx
+dec rbp
+inc ah
+sar rdi,5
+sal dh,7
+sub [rax],rbp
+cmpsw
+jmp [edi]
+cmp [edx],edi
+xor bl,al
+lahf
+and rdi,79
+dec dx
+cli
+test ebp,ebx
+sal dh,5
+lodsw
+adc ah,55
+.Su3471433360:
+jmp [edx]
+sub bl,76
+scasw
+sal dh,7
+shr dx,8
+xor edi,ebp
+or bx,bx
+mov rax,25
+rcl dh,6
+rcr rbp,3
+div ah
+scasb
+sal edx,4
+syscall
+neg ah
+rdtsc
+lodsw
+cmp ch,ch
+adc [ecx],edi
+neg al
+
 idiv eax
 rol rcx,4
 shr rbx,2
