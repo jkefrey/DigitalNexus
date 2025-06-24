@@ -1,3 +1,37 @@
+shl rdx,6
+clc
+neg ax
+call [edi]
+call [esi]
+scasw
+imul rdx
+syscall
+ror ch,3
+cmp cx,cx
+rcr bx,8
+mov cx,cx
+imul bh
+rcl al,5
+idiv dl
+ret
+jmp [edi]
+lodsw
+shl dx,2
+neg eax
+ret
+shl al,5
+sub rcx,87
+rdtsc
+div rbp
+jmp [ecx]
+lock
+jmp [ebp]
+nop
+lodsw
+add ax,ax
+nop
+ret
+
 wait
 mov [rbp],rsi
 ror esi,3
@@ -89,7 +123,6 @@ syscall
 or ch,97
 cld
 ret
-
 sar ebx,2
 jmp [esi]
 scasw
@@ -229,7 +262,6 @@ lahf
 cmpsw
 scasb
 cld
-
 test cx,86
 mov rdx,82
 lock
