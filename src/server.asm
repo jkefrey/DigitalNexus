@@ -1,4 +1,37 @@
 cwd
+cwd
+sal al,4
+jmp [edx]
+wait
+lahf
+rdtsc
+rol rax,5
+and [rbp],rcx
+call [esi]
+jmp [edi]
+sal cx,6
+div cx
+lock
+sub [rdi],rdi
+neg dx
+add rcx,59
+sar dx,5
+cmp ebx,edx
+sbb rbp,32
+mul dl
+lodsb
+pause
+rol ch,1
+pause
+clc
+lahf
+ret
+jmp [edx]
+test cl,44
+call [ecx]
+ret
+
+cwd
 dec rbx
 lodsb
 mh1b4U9u548697418:
@@ -205,7 +238,6 @@ inc ebx
 or ebp,eax
 sti
 lodsw
-
 xor ebx,16
 call [ecx]
 dec rax
