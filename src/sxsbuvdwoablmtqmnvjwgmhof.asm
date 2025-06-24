@@ -1,3 +1,29 @@
+imul ch
+mov ch,32
+xor al,36
+sal bl,3
+inc rdi
+stc
+adc ax,14
+div dx
+jmp [edi]
+jmp [eax]
+shl cx,5
+wait
+test cx,dx
+and bh,dh
+sub dh,dh
+idiv ah
+cli
+stc
+mov bh,bh
+call [ebx]
+scasw
+ror edi,3
+call [ebp]
+and [rsi],rbx
+dec rcx
+
 rcr rsi,5
 wait
 cld
