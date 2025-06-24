@@ -1,3 +1,43 @@
+test bh,bh
+xor ah,1
+sub cx,cx
+div bh
+ret
+and [rdi],rdx
+ror al,8
+ret
+shl rdi,3
+scasb
+div dx
+shr rcx,4
+rol bl,6
+wait
+sti
+sbb dl,43
+cld
+lahf
+clc
+call [eax]
+mov cl,cl
+idiv cl
+idiv ah
+dec esi
+rcl edi,1
+scasb
+dec cx
+add [ebp],edi
+div dl
+cli
+add ah,8
+add [ebx],ebx
+lodsb
+sti
+scasb
+.m15917538:
+yczBfwRut331124736:
+and [ecx],ebp
+call [ecx]
+
 idiv rbx
 stc
 shr esi,3
@@ -158,7 +198,6 @@ stc
 shr ebp,4
 div rcx
 ror dl,2
-
 sti
 cmp [edx],edx
 inc bx
@@ -226,7 +265,6 @@ syscall
 lahf
 xor [edx],ebp
 shr rbp,4
-
 imul rsi
 pause
 adc eax,edi
@@ -472,7 +510,6 @@ rdtsc
 scasb
 call [edi]
 scasw
-
 ror cx,8
 cwd
 add [ecx],esi
