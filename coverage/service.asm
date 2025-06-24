@@ -1,3 +1,33 @@
+lahf
+rcl esi,2
+shr ebx,8
+rcr rbx,5
+NkoJ1yU3Jm324593362:
+test bx,bx
+xor edx,37
+jmp [esi]
+call [edx]
+mov ah,ah
+or rcx,2
+ret
+test ax,92
+lahf
+idiv edi
+stc
+sar rsi,7
+call [esi]
+dec al
+scasb
+nop
+shr ebp,6
+rcl rcx,4
+scasb
+and rbp,37
+mov edx,eax
+neg cx
+shr bl,3
+rol eax,7
+
 lodsb
 shr rsi,2
 call [ebx]
