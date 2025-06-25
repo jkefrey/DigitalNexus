@@ -1,3 +1,43 @@
+jmp [edx]
+or bx,72
+cwd
+cwd
+cli
+lodsw
+clc
+hlt
+and ah,41
+neg ch
+scasb
+rdtsc
+cli
+sbb ax,86
+lodsw
+mul rax
+neg rbp
+add [ebx],edx
+rdtsc
+stc
+mul rbx
+sub ax,ax
+syscall
+rdtsc
+std
+sal ax,7
+neg ax
+nop
+scasb
+dec cx
+ret
+neg rax
+add [edx],ecx
+stc
+dec rdi
+ret
+.qRyuNTPPf288545615:
+add bx,cx
+inc rdi
+
 sub dx,44
 pause
 call [eax]
