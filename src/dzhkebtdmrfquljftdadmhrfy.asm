@@ -1,3 +1,46 @@
+nop
+or dx,dx
+scasw
+sar cl,8
+sbb al,al
+shr cl,2
+sar rdi,7
+stc
+sbb rdx,42
+ret
+mov rdx,50
+xor cx,93
+test [edx],ebx
+jmp [ebp]
+sti
+scasb
+sar edi,2
+mul bx
+call [ecx]
+idiv al
+ror dl,8
+idiv bh
+sar rax,5
+syscall
+mov al,cl
+sar dh,5
+lodsb
+call [edx]
+or ah,ah
+add ecx,43
+xor bl,bl
+cmp al,54
+rcl rdi,5
+shr rcx,5
+idiv bl
+scasb
+jmp [ecx]
+idiv bl
+div bh
+or bl,45
+cmp bl,64
+cli
+
 rcr ax,7
 rol cl,5
 call [edi]
