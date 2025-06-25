@@ -1,3 +1,35 @@
+hlt
+nop
+cmp ch,ch
+rcr ax,1
+nop
+lahf
+scasb
+neg ah
+ret
+mul cx
+std
+inc bx
+test cx,52
+jmp [eax]
+lahf
+nop
+ret
+sub cl,73
+and [esi],ecx
+sbb ch,ch
+dec bh
+cld
+lodsb
+idiv ah
+neg dh
+jmp [edx]
+test [edx],edi
+test rbp,19
+nop
+cmp [ecx],ecx
+cmp ah,ah
+
 jmp [edx]
 or bx,72
 cwd
