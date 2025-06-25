@@ -1,3 +1,39 @@
+call [edi]
+cli
+sti
+ror rdx,7
+lodsb
+imul rbp
+add dl,dl
+stc
+shl ebp,6
+and al,10
+jmp [eax]
+imul rax
+cld
+imul rbx
+.poKaswPl448095515:
+rcr dl,7
+inc rbp
+mul al
+scasb
+nop
+cwd
+cmpsw
+call [esi]
+cli
+rcr ebx,1
+sar dx,3
+adc [rax],rdx
+jmp [edi]
+shl ebp,6
+clc
+wait
+ror dl,2
+add [esi],ebx
+sti
+call [ebx]
+
 imul al
 ret
 call [ecx]
