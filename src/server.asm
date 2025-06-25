@@ -1,3 +1,46 @@
+imul rsi
+sbb rax,14
+std
+xor ax,24
+cmp [rdi],rcx
+sub bx,bx
+hlt
+stc
+inc rbx
+mov [eax],esi
+imul rdx
+inc rbx
+stc
+dec al
+call [eax]
+sub dx,dx
+ret
+sar ebx,3
+ret
+or [rdi],rdx
+sbb [ebp],ebp
+jmp [edi]
+clc
+adc cx,ax
+shr eax,6
+rol edx,3
+jmp [ecx]
+mul esi
+neg cl
+rol cx,2
+jmp [eax]
+lodsw
+sti
+sti
+ret
+cmp dh,ah
+ror dx,2
+jmp [edx]
+and dx,27
+idiv edi
+or dl,11
+dec rcx
+
 cwd
 cwd
 sal al,4
@@ -141,7 +184,6 @@ clc
 cli
 neg rsi
 wait
-
 adc bl,52
 wait
 ror dl,5
