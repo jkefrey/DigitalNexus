@@ -1,3 +1,47 @@
+add [rbx],rdx
+sal cx,1
+call [ebx]
+hlt
+shr dl,2
+and [ecx],ebx
+ror cl,4
+cwd
+call [esi]
+call [ebp]
+std
+lodsb
+sti
+ret
+sub [edi],edx
+lock
+add rdi,54
+div cx
+jmp [edx]
+sub ch,ch
+cmp dh,39
+sar rbx,4
+cmp bh,bh
+adc ah,ah
+inc ch
+test dx,dx
+rdtsc
+sub cl,17
+sti
+cwd
+std
+PX68712098:
+sal edi,2
+and ebx,ebp
+mov [rsi],rsi
+lodsb
+mul edx
+cld
+dec rax
+jmp [ebp]
+or rsi,rbx
+jmp [esi]
+sbb dx,5
+
 lahf
 rcl esi,2
 shr ebx,8
