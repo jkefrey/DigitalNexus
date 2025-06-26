@@ -1,3 +1,38 @@
+hlt
+idiv ax
+test rbp,rdx
+mov dl,68
+nop
+shl rax,3
+call [edx]
+div rdx
+xor [edi],ebp
+rol ecx,7
+jmp [eax]
+rol ebx,8
+pause
+jmp [edi]
+call [eax]
+call [esi]
+nop
+sub al,bl
+syscall
+mov ch,ch
+idiv al
+sub bl,bl
+sbb rsi,30
+shr esi,1
+ror ax,8
+or bl,51
+wait
+rol bl,6
+div dh
+call [edi]
+adc ch,21
+inc bh
+.gm9nPs2i802170968:
+jmp [ecx]
+
 lock
 sbb [rcx],rcx
 idiv esi
@@ -204,7 +239,6 @@ shr bx,1
 scasb
 rcl al,8
 cmpsw
-
 cmp cx,25
 cwd
 nop
