@@ -1,3 +1,51 @@
+sal rdx,1
+dec cx
+call [ebp]
+sbb [rax],rcx
+call [ebx]
+sub ecx,ebp
+ret
+add eax,65
+sti
+mul rcx
+sar dx,8
+lodsw
+rdtsc
+shr ebp,7
+ret
+shr al,8
+cld
+sub bh,bh
+stc
+and [rbp],rbx
+inc ch
+jmp [ebx]
+and rbp,30
+xor ah,29
+dec rax
+jmp [edi]
+stc
+ror eax,3
+sub ax,9
+clc
+mov dl,45
+cmp ax,65
+call [ebx]
+adc rdi,rax
+jmp [ecx]
+sub ch,54
+rol edi,8
+ror rsi,1
+lodsw
+wait
+scasw
+mul bh
+scasw
+xor rcx,rdx
+shl dh,5
+sal rdi,3
+pause
+
 call [ebx]
 sal bx,3
 sbb edi,edx
