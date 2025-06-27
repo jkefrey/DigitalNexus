@@ -1,3 +1,47 @@
+sal dx,7
+sal al,5
+rcl ax,1
+lodsw
+neg rbp
+or bl,bl
+jmp [ebp]
+pause
+inc ebp
+lodsw
+pause
+rol ebp,8
+call [ecx]
+rcr bl,7
+ror bx,1
+cld
+rol ax,5
+cwd
+cld
+add edi,63
+jmp [ecx]
+xor dl,50
+sub [rdx],rsi
+rol ch,4
+inc rcx
+imul rdi
+cmp rbx,54
+jmp [ebp]
+imul dl
+div dl
+stc
+adc dh,83
+lodsw
+idiv ecx
+idiv eax
+imul esi
+adc bh,69
+sal ebx,1
+shr dl,3
+and [ebp],edi
+c29ouyFV311197007:
+sub ch,99
+div cx
+
 hlt
 nop
 cmp ch,ch
