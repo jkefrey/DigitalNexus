@@ -1,3 +1,51 @@
+ret
+rol rbp,8
+clc
+or dx,dx
+call [ebx]
+cmpsw
+ror ax,7
+pause
+sbb ah,ah
+syscall
+shr rdx,7
+rol edi,5
+shr bl,5
+cli
+adc ah,6
+rcr bx,7
+jmp [ecx]
+idiv rax
+inc al
+xor edx,42
+sar edi,7
+shl esi,8
+jmp [ebx]
+mul cl
+sar ah,4
+adc [rdx],rbp
+shl edx,1
+sbb bl,80
+sal rdx,2
+call [ebx]
+cld
+sar dx,4
+sti
+dec bh
+rcl cx,4
+stc
+sub bh,bh
+lahf
+rol ah,4
+inc dl
+jmp [edx]
+neg dl
+cmp [rdi],rdi
+mul bl
+rcl ecx,6
+imul bl
+jmp [ebp]
+
 call [edi]
 cli
 sti
