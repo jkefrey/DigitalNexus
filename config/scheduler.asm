@@ -1,3 +1,29 @@
+or ax,64
+cwd
+stc
+std
+rol edx,3
+std
+nop
+ret
+syscall
+inc cx
+cmp cx,cx
+jmp [ecx]
+ret
+rol bl,6
+rcl rbp,2
+call [edi]
+sub dx,dx
+rdtsc
+cmpsw
+cmpsw
+lahf
+rol ebx,1
+xor [esi],esi
+test rdx,rax
+jmp [eax]
+
 div edi
 sti
 mov dl,81
