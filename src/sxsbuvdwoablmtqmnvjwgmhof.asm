@@ -1,3 +1,40 @@
+or [rsi],rdx
+or esi,esi
+call [ebx]
+cmp [edx],ebp
+lahf
+rol cl,1
+div esi
+imul ah
+xor dl,bl
+pause
+jmp [eax]
+wait
+lock
+neg cx
+dec rsi
+sal ax,4
+add ch,38
+sbb edx,edi
+sal edx,1
+call [edi]
+shl bl,3
+rol ax,8
+call [edi]
+ror rax,8
+neg ah
+rcr dx,2
+jmp [ecx]
+call [edi]
+and rdi,24
+rcl ebx,2
+rol edi,2
+adc dh,dh
+call [esi]
+jmp [ebx]
+scasw
+or cx,cx
+
 imul ch
 mov ch,32
 xor al,36
@@ -116,7 +153,6 @@ call [edx]
 scasw
 scasb
 scasb
-
 xor [rdi],rdi
 nop
 cmpsw
