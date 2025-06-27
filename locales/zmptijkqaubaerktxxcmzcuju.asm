@@ -1,3 +1,48 @@
+mul rdx
+scasw
+div ch
+cmp bl,bl
+rcl bl,3
+jmp [edx]
+lahf
+jmp [edx]
+or dh,77
+dec bx
+mov dl,dl
+shl rcx,8
+syscall
+adc eax,esi
+shr cx,2
+stc
+stc
+jmp [edi]
+adc cx,bx
+ret
+stc
+adc dx,48
+sub al,33
+adc rdi,rbp
+call [ecx]
+rdtsc
+imul esi
+scasb
+clc
+std
+cli
+test [rsi],rcx
+wait
+and dh,55
+hlt
+lodsw
+inc bx
+lock
+rcr rsi,1
+ret
+jmp [ebp]
+mul al
+sar al,1
+xor dl,46
+
 std
 ror bh,8
 mul ch
