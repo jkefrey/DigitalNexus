@@ -1,3 +1,54 @@
+jmp [ecx]
+stc
+div bh
+wait
+neg rdi
+call [edi]
+cli
+sub al,9
+mul edi
+cwd
+sti
+shr rbx,7
+sar rdx,5
+clc
+hlt
+rdtsc
+wait
+syscall
+lodsb
+shl bl,7
+call [ebx]
+jmp [esi]
+rcr bh,7
+stc
+call [ebx]
+shl rdx,5
+lahf
+sar bx,3
+shl rdx,6
+idiv cx
+rol rax,2
+ret
+and dl,37
+shr dx,8
+call [edi]
+rol ax,1
+shr cl,8
+mov [ebp],ecx
+mov ax,cx
+wait
+sti
+adc bh,66
+sar ax,5
+jmp [eax]
+stc
+scasw
+rol dx,6
+hlt
+test [eax],ebx
+test dx,dx
+
 scasw
 sal ah,3
 clc
