@@ -1,3 +1,41 @@
+syscall
+ror eax,6
+div cl
+wait
+sar bx,1
+cmp [ebp],edx
+rol rcx,1
+neg edx
+sar rax,1
+jmp [eax]
+add cx,cx
+ror ah,4
+ret
+xor al,al
+add ax,ax
+mov [rcx],rcx
+dec al
+jmp [ebx]
+jmp [ecx]
+rcl bh,7
+neg eax
+cld
+mov dh,dh
+mul ax
+cmpsw
+div bl
+div eax
+V7v20207871286:
+sar al,7
+scasb
+rcl bh,5
+inc ebp
+sbb ch,ch
+sub ebx,edx
+test ax,86
+hlt
+add cx,dx
+
 add [rbx],rdx
 sal cx,1
 call [ebx]
