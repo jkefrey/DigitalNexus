@@ -1,3 +1,41 @@
+shl bx,6
+rol eax,4
+ret
+cmpsw
+adc ecx,25
+imul ah
+lock
+mov bl,bl
+call [ebp]
+syscall
+mul rsi
+shl ah,7
+rcl edx,2
+and dl,82
+sar dx,1
+shl bh,3
+sub al,al
+idiv bl
+ret
+div rdx
+std
+rcl ecx,7
+rcr esi,1
+call [edx]
+lock
+xor dl,dl
+sal edx,7
+lodsw
+jmp [edi]
+rol ax,3
+xor bh,bh
+xor al,al
+syscall
+sal rsi,5
+pause
+neg ah
+sub [rsi],rcx
+
 syscall
 ror eax,6
 div cl
