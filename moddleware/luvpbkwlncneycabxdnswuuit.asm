@@ -1,3 +1,48 @@
+hlt
+sbb rbp,88
+mul rsi
+cmpsw
+scasb
+ret
+shl rdi,1
+and [rbx],rdx
+sbb rdx,rcx
+std
+div ch
+cmp edx,ebx
+ror cx,6
+xor bh,bh
+dec ecx
+cmp ah,ah
+call [ebx]
+sar ah,4
+inc rcx
+shr rdx,1
+lahf
+test cl,14
+.RgTBr292871963:
+ret
+dec rsi
+.Q4WBI2Q8892590:
+call [edx]
+xor ebp,89
+sal bh,2
+idiv ebx
+clc
+jmp [ecx]
+dec esi
+add cx,26
+idiv ax
+mul ebp
+ret
+jmp [ecx]
+idiv edx
+jmp [esi]
+rdtsc
+cld
+test dl,51
+inc cl
+
 sal dx,7
 sal al,5
 rcl ax,1
