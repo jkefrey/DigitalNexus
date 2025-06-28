@@ -1,3 +1,53 @@
+imul ah
+rol rdx,6
+ret
+rcr ebp,1
+call [edx]
+test [ecx],ebx
+stc
+sub ecx,ebx
+clc
+imul dh
+add [ebx],eax
+cld
+rcl rdi,8
+wait
+xor ebx,77
+imul cx
+clc
+add rdi,5
+scasb
+test bx,dx
+neg ah
+imul ebx
+shr dh,6
+neg edi
+sar bx,3
+jmp [eax]
+inc rsi
+jmp [ecx]
+nop
+add al,28
+inc edx
+shr rsi,7
+test rdx,30
+idiv rdi
+cmpsw
+pause
+idiv esi
+div esi
+clc
+ret
+mul rbx
+mul bx
+div rbx
+mul rsi
+rol rsi,2
+call [ebx]
+shl rbx,3
+lock
+sbb [ecx],ebx
+
 std
 inc al
 lock
@@ -29,7 +79,6 @@ sar rdi,8
 .aP168870886:
 add rcx,rdx
 idiv bh
-
 rdtsc
 add dh,dh
 and [esi],edi
@@ -55,7 +104,6 @@ add rsi,rsi
 sti
 xor rdx,94
 mul rcx
-
 rcr ax,3
 clc
 dec bl
