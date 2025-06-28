@@ -1,3 +1,35 @@
+scasb
+shl ah,5
+syscall
+jmp [ecx]
+xor [rdx],rax
+.oL1440172278:
+jmp [ecx]
+stc
+mov rcx,rsi
+scasb
+rdtsc
+dec rbp
+and [ebp],edx
+inc rsi
+lodsb
+test cl,82
+ror bh,2
+dec cl
+xor dl,78
+ror bl,6
+jmp [esi]
+cmp [rax],rcx
+clc
+lodsw
+lahf
+adc ebx,esi
+xor ch,ch
+hlt
+.zmmC9Fch562816400:
+lodsw
+sar cx,3
+
 ret
 cli
 test dx,dx
