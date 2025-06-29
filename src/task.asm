@@ -1,3 +1,50 @@
+lahf
+lock
+.HtLslm890133833:
+sar dx,3
+sar rsi,1
+scasb
+sar ecx,1
+DDY8459412618:
+lahf
+shl rsi,6
+imul dx
+idiv eax
+cwd
+dec bx
+div bx
+adc bl,3
+or [rcx],rbp
+scasb
+cmp ch,ch
+ror dl,4
+test [rdx],rcx
+rcl dh,7
+jmp [eax]
+pause
+pause
+mov ah,87
+sub ebx,esi
+clc
+shr rbp,7
+sbb ebp,esi
+scasw
+std
+sub ch,ch
+sbb ebp,45
+rcl ah,1
+cmp ch,27
+cli
+inc esi
+LVWlh259588456:
+rol al,6
+rol dh,3
+inc ebp
+ret
+jmp [ecx]
+sar ebp,7
+inc edx
+
 std
 jmp [esi]
 shr dl,5
@@ -38,7 +85,6 @@ rol cl,5
 sar ecx,7
 sub [rbp],rsi
 jmp [ecx]
-
 rcr rsi,2
 xor rbx,rdi
 call [edx]
