@@ -1,3 +1,31 @@
+ror rdx,5
+neg bh
+cld
+sti
+inc dx
+scasb
+sar ebp,2
+shr ebx,5
+rcl edx,7
+mul rsi
+nop
+.YE53CMh_8u96034823:
+mul rbp
+scasw
+clc
+clc
+ret
+wait
+mov ch,ch
+sar rdx,3
+mul dl
+pause
+pause
+ret
+or [esi],eax
+ror bx,3
+sal edi,7
+
 jmp [ecx]
 stc
 div bh
