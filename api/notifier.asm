@@ -1,3 +1,43 @@
+stc
+sub dx,47
+imul dh
+xor [ebp],ebx
+or bh,93
+test [ebp],edx
+shl dl,7
+ret
+syscall
+and [edx],eax
+syscall
+rcl edx,6
+sbb bh,bh
+rdtsc
+sal bh,3
+sal al,6
+jmp [ebx]
+and eax,eax
+sar esi,3
+idiv eax
+pause
+rol ah,4
+lodsb
+ror ch,3
+mul ebx
+jmp [ebx]
+mov [esi],ebp
+inc dl
+jmp [ecx]
+rcl rcx,8
+std
+xor ebx,4
+cmp ax,31
+lahf
+lahf
+xor [ebp],ebx
+sti
+ret
+scasb
+
 jmp [ecx]
 cli
 jmp [edi]
