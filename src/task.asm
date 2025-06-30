@@ -1,3 +1,54 @@
+sbb esi,eax
+wait
+ret
+wait
+sub cx,cx
+clc
+cli
+.OllM2gi419881998:
+sal esi,7
+rcr esi,3
+mul al
+scasw
+ret
+pause
+wait
+xor [rbp],rsi
+and rdi,59
+rcl rbp,7
+hlt
+cwd
+neg dh
+mov [ebx],ecx
+imul rcx
+jmp [eax]
+cwd
+cli
+std
+stc
+cmp [edi],esi
+inc rcx
+ror rax,1
+wait
+sar edx,6
+and cx,36
+cli
+stc
+jmp [ebx]
+div rcx
+nop
+mov ah,75
+call [edx]
+mul rbx
+ret
+or ah,64
+inc bh
+call [eax]
+shl ah,5
+sub [ebx],edi
+imul rax
+test esi,edx
+
 lahf
 lock
 .HtLslm890133833:
