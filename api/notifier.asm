@@ -1,3 +1,34 @@
+or rsi,rbx
+lodsb
+lahf
+shl ebx,4
+cmpsw
+shl ebp,3
+clc
+sub rsi,80
+sti
+jmp [ebx]
+mul rax
+lodsw
+dec eax
+ret
+or rdx,35
+mov [rdi],rdx
+mov al,al
+call [ebx]
+div rsi
+and [eax],esi
+cwd
+neg edx
+cmp al,94
+ret
+dec edi
+adc rdx,rdi
+scasb
+cld
+dec ecx
+adc [rbx],rcx
+
 stc
 sub dx,47
 imul dh
