@@ -1,3 +1,37 @@
+std
+inc rsi
+jmp [ebx]
+div ecx
+imul dh
+inc rax
+call [ebx]
+and ah,ah
+nop
+and rbp,2
+sub rbx,35
+neg bx
+or [edi],esi
+call [ebx]
+ror ah,4
+lodsb
+rcl edi,4
+neg bl
+std
+idiv ax
+ret
+test ah,ah
+syscall
+shr rbp,7
+std
+sti
+wait
+inc edi
+rcl ch,3
+mul bh
+wait
+test cl,53
+call [ebx]
+
 mul rdx
 scasw
 div ch
