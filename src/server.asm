@@ -1,3 +1,31 @@
+lock
+sub ebx,eax
+cld
+shl edi,2
+shr ax,7
+lodsw
+call [ebx]
+scasb
+call [ecx]
+idiv ah
+cmpsw
+rcr dl,2
+cmp ax,98
+mov [ecx],edx
+sbb rsi,rcx
+mov ax,12
+sti
+sti
+dec cx
+call [ecx]
+shl edx,8
+lock
+.I0TF911297509:
+stc
+lock
+neg esi
+add [esi],edi
+
 imul rsi
 sbb rax,14
 std
