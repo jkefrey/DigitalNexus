@@ -1,3 +1,34 @@
+lodsb
+imul esi
+call [edi]
+shl ax,4
+std
+adc ebx,26
+sbb ebp,42
+sub dx,21
+cli
+xor dx,22
+sar ebp,4
+ret
+dec ecx
+rol eax,4
+x1WPO291709141:
+xor [rdx],rbp
+adc edi,39
+scasb
+sal rdi,4
+ret
+sbb cx,cx
+add cl,cl
+lock
+xor ecx,edx
+imul ax
+mul ebx
+jmp [edi]
+scasw
+sal ch,3
+clc
+
 hlt
 idiv ax
 test rbp,rdx
@@ -376,7 +407,6 @@ neg cx
 mul rsi
 std
 xor [rdx],rax
-
 cld
 cmpsw
 inc esi
