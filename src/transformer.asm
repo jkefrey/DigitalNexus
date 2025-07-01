@@ -1,3 +1,32 @@
+sti
+adc ah,33
+cmp al,4
+hlt
+ret
+imul rax
+jmp [edx]
+sal rdx,1
+stc
+clc
+dec dx
+jmp [esi]
+cld
+imul dx
+rcr rsi,8
+ret
+rol cx,7
+div rcx
+add esi,edi
+inc dh
+sub bh,bh
+rcr al,6
+pause
+lodsb
+syscall
+ror dx,4
+lodsb
+sbb [ecx],ebp
+
 ret
 rol rbp,8
 clc
@@ -45,7 +74,6 @@ mul bl
 rcl ecx,6
 imul bl
 jmp [ebp]
-
 call [edi]
 cli
 sti
