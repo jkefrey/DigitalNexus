@@ -1,3 +1,54 @@
+dec rbp
+std
+jmp [edi]
+cld
+call [esi]
+rol cl,4
+test esi,eax
+ror al,7
+add rcx,rcx
+rcl esi,3
+add [rdx],rdi
+neg eax
+dec rdi
+sub ebp,8
+call [eax]
+rcr rdx,2
+jmp [ebp]
+lodsw
+ror ax,3
+sub bl,dl
+hlt
+sbb ch,ch
+shl ebp,7
+adc edx,54
+adc rax,rcx
+jmp [edx]
+jmp [esi]
+.yBKGb559937782:
+cmpsw
+adc [eax],ebp
+clc
+mul dh
+adc [eax],esi
+ror esi,1
+sar ecx,5
+.j832853257:
+shr cx,1
+ret
+call [esi]
+add ch,79
+cld
+sti
+clc
+call [edx]
+test cx,cx
+shr bh,3
+jmp [edi]
+cmpsw
+cld
+lodsw
+
 imul ah
 rol rdx,6
 ret
