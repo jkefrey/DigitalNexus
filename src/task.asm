@@ -1,3 +1,32 @@
+shr cl,2
+dec rsi
+cmp cx,cx
+.ieN111589156:
+test edx,11
+syscall
+cmp ah,50
+or [edx],ebp
+lahf
+dec edx
+adc [rdi],rbp
+neg dl
+scasb
+nop
+add [rbp],rbx
+lock
+call [ebx]
+rcr edx,1
+jmp [edx]
+rol rsi,2
+sbb rax,rdi
+stc
+rol edx,3
+jmp [edx]
+lahf
+lodsw
+call [eax]
+lodsw
+
 sbb esi,eax
 wait
 ret
