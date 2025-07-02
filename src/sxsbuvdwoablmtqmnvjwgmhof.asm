@@ -1,3 +1,34 @@
+sti
+imul bl
+xor ah,27
+call [ebx]
+or cl,30
+mul dh
+lodsw
+dec dl
+ror rdx,3
+rol rbx,8
+call [edi]
+syscall
+neg dh
+stc
+rol bx,7
+jmp [esi]
+shr edi,1
+neg rdi
+sar dh,2
+call [edi]
+wait
+lock
+cmpsw
+sar rdx,4
+ret
+mov bl,18
+inc rbp
+syscall
+ret
+inc rbp
+
 or [rsi],rdx
 or esi,esi
 call [ebx]
@@ -190,7 +221,6 @@ test cx,cx
 std
 ret
 lock
-
 rol cl,5
 inc al
 sar esi,5
