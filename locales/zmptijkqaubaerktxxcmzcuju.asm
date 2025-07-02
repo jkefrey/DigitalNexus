@@ -1,3 +1,44 @@
+jmp [esi]
+.ZU662870373:
+adc ax,ax
+add bx,2
+lock
+scasw
+rcr ecx,1
+sti
+call [ebp]
+rdtsc
+jmp [edx]
+div ecx
+test [rcx],rdi
+call [ebx]
+sal ah,6
+ret
+idiv cx
+wait
+shr bl,5
+rol ebx,8
+sar dh,4
+sbb al,al
+lahf
+rol esi,6
+scasw
+ror ch,5
+cmpsw
+lodsw
+rcr rdx,6
+shr dl,7
+imul rdx
+rol al,7
+hlt
+rol bl,3
+xor cl,al
+sar ecx,4
+sub dx,79
+syscall
+lahf
+dec bh
+
 std
 inc rsi
 jmp [ebx]
