@@ -1,3 +1,31 @@
+ror ah,4
+cmp ah,ah
+wait
+shl cl,7
+mov rdi,62
+sal rbp,1
+rol bh,6
+shr rbx,4
+call [edx]
+sub [ebx],ebx
+sal cl,6
+dec dx
+dec ah
+sti
+std
+shr bl,4
+div bh
+add [edx],eax
+idiv edi
+sal ax,6
+sar rbp,5
+and edi,2
+syscall
+std
+dec edx
+div ecx
+sti
+
 hlt
 sbb rbp,88
 mul rsi
